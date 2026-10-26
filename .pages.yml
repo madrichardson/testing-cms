@@ -24,3 +24,29 @@ content:
             - Active
             - In Development
             - Archived
+  - name: projects
+    label: Projects
+    type: file
+    path: content/projects.yml
+    fields:
+      - name: projects
+        label: Projects
+        type: object
+        list: true
+        fields:
+          - name: name
+            label: Project Name
+            type: string
+
+          - name: status
+            label: Status
+            type: select
+            options:
+              values:
+                - Active
+                - In Development
+                - Archived
+
+          - name: last_updated
+            label: Last Updated
+            type: string     

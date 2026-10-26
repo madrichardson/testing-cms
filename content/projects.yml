@@ -1,0 +1,12 @@
+projects:
+  - name: "TurtleWatch"
+    status: "Active"
+    last_updated: "2026-10-01"
+
+  - name: "Sardine Habitat"
+    status: "In Development"
+    last_updated: "2026-09-25"
+
+  - name: "Primary Productivity"
+    status: "Active"
+    last_updated: "2026-10-15"
