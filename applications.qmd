@@ -14,10 +14,30 @@ CoastWatch West Coast Node has contributed the following projects.
 
 ```{python}
 #| echo: false
+from pathlib import Path
+
 import pandas as pd
+import yaml
 from IPython.display import display, HTML
 
-df = pd.read_csv("spreadsheets/applications.csv", encoding="utf-8").fillna("")
+# Load application content directly from Pages CMS YAML files
+applications = []
+
+for path in Path("content/applications").glob("*.yml"):
+    with path.open(encoding="utf-8") as file:
+        application = yaml.safe_load(file)
+
+    if application:
+        applications.append(application)
+
+# Convert to DataFrame and preserve the original card order
+df = pd.DataFrame(applications)
+
+if df.empty:
+    raise ValueError("No application YAML files found.")
+
+df["order"] = pd.to_numeric(df["order"])
+df = df.sort_values("order").fillna("")
 
 def pick_primary_link(row):
     """
