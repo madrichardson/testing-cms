@@ -1,0 +1,12 @@
+order: 11
+image: images/fishstock.png
+alt: Fisheries Stock Assessment Image
+category_title: Fisheries Stock Assessment
+project_name: Alaska Stock Assessment Tool
+modal_id: modal-fishstock
+caption: Fisheries management regions in the Bering Sea and the Gulf of Alaska.
+partners: NOAA Alaska Fisheries Science Center and CoastWatch West Coast Node.
+description: CoastWatch West Coast Node has created satellite indices for the Alaskan Fishery Management areas to be used in the Ecosystem and Socioeconomic Profiles (ESP), which are submitted as part of the annual Stock Assessment and Fishery Evaluation (SAFE) Reports.
+funding: NOAA Alaska Fisheries Science Center and CoastWatch West Coast Node.
+homepage_url: ''
+project_href: projects/afsc-stock-assessment/AFSC-Stock-Assessment-Tool.qmd

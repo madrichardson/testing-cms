@@ -1,0 +1,12 @@
+order: 13
+image: images/satcourse.png
+alt: Satellite Course Image
+category_title: User Training Courses
+project_name: CoastWatch Satellite Course
+modal_id: modal-satcourse
+caption: Course instructor Dr. Cara Wilson teaching course participants the basics of satellite remote sensing.
+partners: NOAA CoastWatch Regional Nodes and NOAA CoastWatch Central Office.
+description: The CoastWatch West Coast Node offers courses for NOAA scientists and managers, and anybody wanting to learn how to access and use ocean satellite data. The course has been offered each year since 2006.
+funding: NOAA CoastWatch.
+homepage_url: sat_courses.qmd
+project_href: ''

@@ -1,0 +1,12 @@
+order: 1
+image: images/ecocast.png
+alt: EcoCast
+category_title: Dynamic Ocean Management
+project_name: EcoCast
+modal_id: modal-ecocast
+caption: The blue shark is a protected species included in the EcoCast fisheries sustainability tool.
+partners: San Diego State University, UC Santa Cruz, University of Maryland, Old Dominion University, Stanford University, and NOAA SWFSC Environmental Research Division.
+description: CoastWatch West Coast Node (WCN) provides satellite data products and a web presence to the EcoCast project. EcoCast is a real-time tool to help fishers and managers allocate fishing effort to optimize the harvest of target fish while minimizing bycatch of protected species. WCN also serves the EcoCast products via ERDDAP.
+funding: NASA EcoForecasting and Applied Science program (NNH12ZDA001N-ECOF) with additional support from California SeaGrant, NOAA Bycatch Reduction Engineering Program, NOAA West Coast Regional Office, NOAA Integrated Ecosystem Assessment program, StanfordÕs Center for Ocean Solutions, and NOAA CoastWatch.
+homepage_url: ''
+project_href: projects/ecocast/ecocast.qmd

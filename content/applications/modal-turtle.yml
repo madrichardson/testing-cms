@@ -1,0 +1,12 @@
+order: 2
+image: images/loggerhead_turtles.png
+alt: Turtles
+category_title: Turtle Conservation
+project_name: Loggerhead Turtles Bycatch
+modal_id: modal-turtle
+caption: A Loggerhead turtle swimming in the waters off Southern California.
+partners: UC Santa Cruz, NOAA Southwest Fisheries Science Center, Stanford University, ant the University of Maryland.
+description: The TOTAL (Temperature Observations To Avoid Loggerheads) project uses satellite-based environmental indicators within a dynamic ocean management framework to deliver a tool that helps minimize loggerhead bycatch without causing undue impact on the industry. The CoastWatch West Coast Node provides satellite data products and a web presence for the project.
+funding: NOAA Fisheries Bycatch Reduction Engineering Program (grant number NA16NMF4720278), with support from NOAA Southwest Fisheries Science Center and NOAA CoastWatch.
+homepage_url: ''
+project_href: projects/turtlewatch/turtlewatch.qmd

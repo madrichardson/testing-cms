@@ -1,0 +1,12 @@
+order: 6
+image: images/polarwatch.png
+alt: PolarWatch Image
+category_title: Polar Regions Satellite Data
+project_name: PolarWatch
+modal_id: modal-polarwatch
+caption: Sea Ice Cover in the Arctic and the Antarctic.
+partners: The Alaska Fisheries Science Center (AFSC), the National Ice Center, the National Snow and Ice Center, CoastWatch West Coast Node and Central Office, and the NOAA SWFSC Environmental Research and Fisheries Antarctic Ecosystem Research Divisions.
+description: PolarWatch extends the CoastWatch program by providing high-latitude satellite observation data to governmental, academic, commercial, and public users in support of broad applications in the Arctic and Southern Oceans.
+funding: NOAA CoastWatch.
+homepage_url: https://polarwatch.noaa.gov/
+project_href: ''

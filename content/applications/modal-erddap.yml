@@ -1,0 +1,12 @@
+order: 12
+image: images/non-traditional-erddap.png
+alt: Non-Traditional Use of ERDDAP Image
+category_title: Non-Traditional Use of ERDDAP
+project_name: Secure ERDDAP Automation
+modal_id: modal-erddap
+caption: Metadata queried from a secure ERDDAP tabledap dataset is filtered locally in Python or R, matched to archive slide images, and automatically assembled into a customized PowerPoint presentation.
+partners: SWFSC, CoastWatch West Code Node, PolarWatch, CoastWatch Central, and JPSS PGRR Program.
+description: Use ERDDAP as a secure metadata database and image server to automatically generate custom PowerPoint presentations from CoastWatch training slide archives. This project demonstrates how password-protected ERDDAP tabledap datasets can store participant metadata, while file-based datasets host archived slide images, enabling fully automated querying, filtering, and slide compilation workflows in Python or R.
+funding: NOAA CoastWatch and JPSS PGRR Program.
+homepage_url: ''
+project_href: projects/course-slides-erddap/course-slides-erddap.qmd

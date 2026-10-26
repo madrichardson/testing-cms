@@ -1,0 +1,12 @@
+order: 4
+image: images/sardine_habitat.png
+alt: Sardine Potential Habitat Image
+category_title: Habitat Modeling
+project_name: Sardine Potential Habitat
+modal_id: modal-sardine
+caption: Maps of potential sardine habitat (left) and sea surface temperature maps (right).
+partners: NOAA's Southwest Fisheries Science Center.
+description: CoastWatch West Coast Node is operationalizing the Pacific sardines predictive habitat model. The model characterizes the relationships between the occurrence of the northern stock of Pacific sardine and the species' preferred habitat, as determine from environment factors measured with satellites. The predicted habitat can be used to schedule the time and location of ship and aerial surveys to create an optimal sampling strategy.
+funding: NOAA CoastWatch.
+homepage_url: https://coastwatch.pfeg.noaa.gov/erddap/griddap/sardine_habitat_viirs.graph?potential_habitat%5B(2023-04-04T12:00:00Z)%5D%5B(50.98125):(27.01875)%5D%5B(-129.99375):(-113.00625)%5D&.draw=surface&.vars=longitude%7Clatitude%7Cpotential_habitat&.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff
+project_href: ''

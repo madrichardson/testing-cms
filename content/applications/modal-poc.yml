@@ -1,0 +1,12 @@
+order: 8
+image: images/poc.png
+alt: Particulate Organic Carbon Image
+category_title: POC Algorithm Development
+project_name: Particulate Organic Carbon
+modal_id: modal-poc
+caption: Global POC distribution generated with a potential new algorithm for the SeaWiFS sensor.
+partners: UC San Diego's Scripps Institution of Oceanography.
+description: Particulate organic carbon (POC) is a standard global product that is generated for many ocean color sensors. The POC algorithm used as of 2020 is over a decade old and was validated with only limited in situ observations. CoastWatch West Coast Node is supporting the work of researchers from Scripps Institution of Oceanography to develop updated POC algorithms for the SeaWiFS, MODIS, and VIIRS ocean color satellites.
+funding: NASA Science of TERRA, AQUA, and SUOMI NPP program (80NSSC18K0956) with support from NOAA CoastWatch.
+homepage_url: https://oceanoptics.ucsd.edu/
+project_href: ''

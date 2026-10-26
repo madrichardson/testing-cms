@@ -1,0 +1,12 @@
+order: 3
+image: images/whalewatch.png
+alt: WhaleWatch Image
+category_title: Blue Whale Conservation
+project_name: WhaleWatch 2.0
+modal_id: modal-whalewatch
+caption: A blue whale surfacing in the waters off the California coast within the California Current Ecosystem.
+partners: A consortium of scientists, managers, and members of the shipping industry. The WhaleWatch 2.0 team is scientists from University of California Santa Cruz and Oregon State University and NOAA's Environmental Resource Division.
+description: The WhaleWatch 2.0 project produces a daily map product that is a predictive spatial management tool to categorize suitable blue whale habitat within the California Current Ecosystem. The map identifies where whales are most likely to be each day based on current environmental conditions, such as ocean temperature and productivity.
+funding: The Benioff Ocean Initiative.
+homepage_url: ''
+project_href: projects/whalewatch/whalewatch.qmd

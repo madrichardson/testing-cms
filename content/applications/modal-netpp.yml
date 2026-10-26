@@ -1,0 +1,12 @@
+order: 5
+image: images/productivity.png
+alt: NetPP Image
+category_title: 'Primary Productivity '
+project_name: VIIRS Interim Products
+modal_id: modal-netpp
+caption: Global primary productivity from the VIIRS-SNPP netPP product.
+partners: NOAA CoastWatch Nodes, NOAA Southeast Fisheries Science Center, and NOAA National Marine Fisheries Service.
+description: NOAA CoastWatch developed interim primary productivity products to bridge the gap created by the upcoming retirement of the MODIS-Aqua sensor, which has supported the legacy global product since 2007. These interim products, driven by VIIRS-SNPP and VIIRS-NOAA20 data using the established VPGM algorithm, provide continuity for users until the next generation of primary productivity products is available.
+funding: The project was supported by funding from the Portfolio Management Branch of NESDIS, NOAA CoastWatch, and CSU COAST.
+homepage_url: ''
+project_href: projects/primary-productivity/netpp.qmd

@@ -1,0 +1,12 @@
+order: 10
+image: images/charm.png
+alt: C-HARM Image
+category_title: Harmful Algal Blooms
+project_name: C-HARM HABs Forecast
+modal_id: modal-charm
+caption: The probability of Pseudo-nitzschia (left) and Cellular Domoic Acid (right) occurrence of the California coast.
+partners: Central & Northern California Ocean Observing System, Southern California Coastal Ocean Observing System, UC Santa Cruz, UC Los Angeles, RSS Inc, and NOAA National Ocean Service.
+description: The CoastWatch West Coast Node operationalized the C-HARM harmful algal bloom (HAB) products, which predict the occurrences of Pseudo-nitzschia and the domoic acid toxin using sophisticated circulation models, satellite remote-sensing data, and statistical models.
+funding: National Aeronautics and Space Administration (NNX13AL28G, NNX14AC42G), US IOOS Coastal Ocean Modeling Testbed (COMT), NOAA ECOHAB, and the Packard Foundation with support from NOAA CoastWatch.
+homepage_url: https://habs.sccoos.org/hab-forecast
+project_href: ''

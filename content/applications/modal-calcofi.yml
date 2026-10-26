@@ -1,0 +1,12 @@
+order: 7
+image: images/calcofi-monitoring.png
+alt: CalCOFI Image
+category_title: Watch My Ocean
+project_name: CalCOFI Satellite Monitoring & Vessel Tracking
+modal_id: modal-calcofi
+caption: CalCOFI Monitoring page part of Watch My Ocean.
+partners: NOAA CoastWatch Nodes and SWFSC.
+description: 'Watch My Ocean is an interactive dashboard developed by NOAA CoastWatch West Coast Node that enables users to explore oceanographic conditions using satellite . It supports both regional analysis around CalCOFI stations and vessel-based monitoring, allowing users to examine conditions near NOAA ships in near real time. '
+funding: NOAA CoastWatch.
+homepage_url: ''
+project_href: projects/watch-my-ocean/calcofi.html

@@ -1,0 +1,12 @@
+order: 9
+image: images/ocean_modeling.png
+alt: WCOFS Image
+category_title: Ocean Modeling
+project_name: Advancing WCOFS Modeling
+modal_id: modal-oceanmodeling
+caption: WCOFS model output for bathymetry (left) and the model grid (right).
+partners: UC Santa Cruz, NOAA National Environmental Satellite Data and Information Service, NOAA National Marine Fisheries Service, NOAA Coast Survey Development Lab, Northwest Association of Networked Ocean Observing System, and Central & Northern California Ocean Observing System.
+description: CoastWatch West Coast Node is a member of a research group working to transition established ecological products that are generated using ocean model output, such as the California-Harmful Algae Risk Mapping (C-HARM) products, to use output from the WCOFS model.
+funding: U.S. IOOS Coastal and Ocean Modeling Testbed (COMT) program, with support from NOAA CoastWatch.
+homepage_url: https://comt.ioos.us/projects/wcofs_advancement
+project_href: ''
