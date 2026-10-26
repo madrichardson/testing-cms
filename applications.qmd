@@ -1,0 +1,117 @@
+---
+title: "CoastWatch Projects"
+anchor-sections: false
+format:
+  html:
+    toc: false
+page-layout: full
+jupyter: python3
+resources:
+  - images/**
+---
+
+CoastWatch West Coast Node has contributed the following projects.
+
+```{python}
+#| echo: false
+import pandas as pd
+from IPython.display import display, HTML
+
+df = pd.read_csv("spreadsheets/applications.csv", encoding="utf-8").fillna("")
+
+def pick_primary_link(row):
+    """
+    Prefer internal project mini-site if available; otherwise fall back to external homepage.
+    Returns: (href, label, target_attr)
+    """
+    project_href = str(row.get("project_href", "")).strip()
+    homepage_url = str(row.get("homepage_url", "")).strip()
+
+    if project_href:
+        return project_href, "View Project", ""              # internal: same tab
+    if homepage_url:
+        return homepage_url, "Homepage", ' target="_blank"'  # external: new tab
+    return "", "", ""
+
+# --- Generate cards ---
+card_html = '<div class="project-grid">'
+for _, row in df.iterrows():
+    card_html += f'''
+    <div class="project-card open-modal" data-modal="{row['modal_id']}">
+      <img src="{row['image']}" alt="{row['alt']}">
+      <h3>{row['category_title']}</h3>
+      <h7>{row['project_name']}</h7>
+    </div>
+    '''
+card_html += '</div>'
+
+# --- Generate modals ---
+modal_html = ""
+for _, row in df.iterrows():
+    href, label, target_attr = pick_primary_link(row)
+    button_html = (
+        f'<a href="{href}"{target_attr} class="btn btn-primary">{label}</a>'
+        if href else ""
+    )
+
+    modal_html += f'''
+<div id="{row['modal_id']}" class="modal">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    <h2>{row['project_name']}</h2>
+    <div class="modal-columns">
+      <div class="modal-column">
+        <img src="{row['image']}" alt="{row['alt']}" class="modal-top-image">
+        <p class="caption">{row['caption']}</p>
+        <h4>Partners</h4>
+        <p>{row['partners']}</p>
+      </div>
+      <div class="modal-column">
+        <h4>Description</h4>
+        <p>{row['description']}</p>
+        <h4>Funding</h4>
+        <p>{row['funding']}</p>
+        {button_html}
+      </div>
+    </div>
+  </div>
+</div>
+'''
+
+display(HTML(card_html + modal_html))
+```
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  document.querySelectorAll(".project-card.open-modal").forEach(card => {
+    card.addEventListener("click", () => {
+      const modalId = card.getAttribute("data-modal");
+      const modal = document.getElementById(modalId);
+      if (modal) modal.classList.add("show");
+    });
+  });
+
+  document.querySelectorAll(".close-btn").forEach(button => {
+    button.addEventListener("click", () => {
+      const modal = button.closest(".modal");
+      if (modal) modal.classList.remove("show");
+    });
+  });
+
+  window.addEventListener("click", (e) => {
+    document.querySelectorAll(".modal").forEach(modal => {
+      if (e.target === modal) modal.classList.remove("show");
+    });
+  });
+
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") {
+      document.querySelectorAll(".modal.show").forEach(modal =>
+        modal.classList.remove("show")
+      );
+    }
+  });
+
+});
+</script>
