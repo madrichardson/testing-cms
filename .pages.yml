@@ -50,3 +50,65 @@ content:
           - name: last_updated
             label: Last Updated
             type: string     
+  - name: applications
+    label: Applications
+    type: collection
+    path: content/applications
+    format: yaml
+    filename: "{primary}.yml"
+
+    view:
+      fields:
+        - project_name
+        - category_title
+        - image
+
+    fields:
+      - name: project_name
+        label: Project Name
+        type: string
+        required: true
+
+      - name: category_title
+        label: Category Title
+        type: string
+
+      - name: image
+        label: Project Image
+        type: image
+
+      - name: alt
+        label: Image Alt Text
+        type: string
+
+      - name: caption
+        label: Image Caption
+        type: text
+
+      - name: partners
+        label: Partners
+        type: text
+
+      - name: description
+        label: Project Description
+        type: text
+
+      - name: funding
+        label: Funding
+        type: text
+
+      - name: homepage_url
+        label: External Homepage URL
+        type: string
+
+      - name: project_href
+        label: Internal Project Page
+        type: string
+
+      - name: modal_id
+        label: Modal ID
+        type: string
+
+      - name: order
+        label: Display Order
+        type: number
