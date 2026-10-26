@@ -1,0 +1,26 @@
+media:
+  input: images
+  output: /images
+
+content:
+  - name: homepage
+    label: Homepage
+    type: file
+    path: content/homepage.yml
+    fields:
+      - name: title
+        label: Page Title
+        type: string
+
+      - name: description
+        label: Description
+        type: text
+
+      - name: status
+        label: Project Status
+        type: select
+        options:
+          values:
+            - Active
+            - In Development
+            - Archived
