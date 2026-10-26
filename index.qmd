@@ -27,43 +27,54 @@ format:
 </div>
 
 ```{python}
+
 import pandas as pd
+import yaml
 from IPython.display import display, HTML
 from datetime import date
 
-# Load Excel
-df = pd.read_excel("spreadsheets/news_archive.xlsx")
+# Load news announcements from YAML
+with open("content/news.yml", "r", encoding="utf-8") as file:
+    news_data = yaml.safe_load(file)
 
-# Parse using known format: 27-Jun-25
-df['Date'] = pd.to_datetime(df['Date'], format='%d-%b-%y', errors='coerce')
-df = df[df['Date'].notna()]
+df = pd.DataFrame(news_data["news"])
 
-# - Blank Expiration = keep
+# Parse publication dates
+df["date"] = pd.to_datetime(df["date"], errors="coerce")
+df = df[df["date"].notna()]
+
+# Blank expiration = keep
 # Expiration date in past = hide from news card
 today = pd.Timestamp(date.today())
 
-if "Expiration" in df.columns:
-  df["Expiration"] = pd.to_datetime(df["Expiration"], errors="coerce")
-  df = df[df["Expiration"].isna() | (df["Expiration"] >= today)]
+if "expiration" in df.columns:
+    df["expiration"] = pd.to_datetime(df["expiration"], errors="coerce")
+    df = df[
+        df["expiration"].isna()
+        | (df["expiration"] >= today)
+    ]
 
 # Sort newest first
-df = df.sort_values(by="Date", ascending=False)
+df = df.sort_values(by="date", ascending=False)
 
 # Show latest 3 entries
 latest_news = df.head(3)
 
 html = ""
 for _, row in latest_news.iterrows():
-    day = row['Date'].day
-    month_year = row['Date'].strftime('%b. %Y')
+    day = row["date"].day
+    month_year = row["date"].strftime("%b. %Y")
+
     html += f"""
     <div class='news-item'>
-      <p class='news-title'>{row['Title']}</p>
-      <p>{row['Description']}</p>
+      <p class='news-title'>{row['title']}</p>
+      <p>{row['description']}</p>
       <p class='news-date'>{day} {month_year}</p>
     </div>
     """
+
 display(HTML(html))
+
 ```
 :::
 
