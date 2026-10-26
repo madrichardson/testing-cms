@@ -1,0 +1,21 @@
+---
+title: "Home"
+jupyter: python3
+---
+
+```{python}
+#| echo: false
+#| output: asis
+
+from pathlib import Path
+import yaml
+
+# Read the CMS-managed YAML file
+with Path("content/homepage.yml").open() as file:
+    content = yaml.safe_load(file)
+
+# Generate Markdown from the YAML content
+print(f"## {content['title']}\n")
+print(content["description"])
+print(f"\n**Status:** {content['status']}")
+```
