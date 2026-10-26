@@ -1,1 +1,3931 @@
 /* css styles */
+
+/* Global zoom out*/
+html {
+  zoom: 0.85
+}
+
+/* ---------------------------------- */
+/* NAVBAR                            */
+/* ---------------------------------- */
+
+/* Adjusts the height of the logo in the top navbar */
+.navbar-brand img {
+  height: 60px;           /* fixed height for logo */
+  max-height: none;       /* disables any browser-imposed limit */
+}
+
+.navbar {
+  background-color: #003366 !important;  /* NOAA deep blue */
+  border-bottom: none;
+}
+
+.navbar-nav .nav-link{
+  font-size: 1.1rem;
+}
+
+.navbar a,
+.navbar-brand,
+.navbar-nav .nav-link {
+  color: white !important; /* Make links white */
+}
+
+.navbar a:hover,
+.navbar-nav .nav-link:hover {
+  color: #aad8ff !important; /* Light blue on hover */
+}
+
+/* Center the dropdown under its navbar item */
+.navbar .dropdown-menu {
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  right: auto !important;
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+  background-color: white;
+  border-radius: 10px;
+  border: none;
+  padding: 0.25rem 0; /* Reduce vertical padding */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Dropdown items */
+.dropdown-menu .dropdown-item {
+  background-color: transparent;
+  color: #003366 !important;
+  padding: 0.5rem 1rem;       /* Keep this symmetric */
+  margin: 0;                 /* Remove margin to prevent overflow */
+  border-radius: 0;          /* No pill shape */
+  transition: background-color 0.2s ease-in-out;
+  width: 100%;               /* Ensures it fills dropdown width */
+  box-sizing: border-box;    /* Prevents overflow from padding */
+}
+
+/* Hover effect */
+.dropdown-menu .dropdown-item:hover {
+  background-color: #e6f4ff;
+  color: #003366 !important;
+}
+
+/* ---------------------------------- */
+/* OVERRIDE DEFAULT HYPERLINKS        */
+/* ---------------------------------- */
+
+/* Global link style override */
+a {
+  color: #0054a6;             /* NOAA blue */
+  text-decoration: none;      /* Removes underline */
+  font-weight: 500;           /* Optional: make it stand out a bit */
+}
+
+/* Hover behavior for all links */
+a:hover {
+  text-decoration: underline; /* Optional: show underline on hover */
+  color: #003366;             /* Darker blue on hover */
+}
+
+/* ---------------------------------- */
+/* HERO IMAGE CARD (Homepage banner) */
+/* ---------------------------------- */
+
+.image-card {
+  position: relative;                         /* allows layering */
+  height: 450px;                              /* height of banner */
+  border-radius: 12px;                        /* rounded corners */
+  overflow: hidden;                           /* hides overflow */
+  background-image: url('images/primary_productivity.png');
+  background-size: cover;                     /* stretch to fill */
+  background-position: center;                /* center the image */
+}
+
+.image-card::before {
+  content: "";                                /* creates overlay layer */
+  position: absolute;
+  inset: 0;                                   /* cover entire card */
+  background-color: rgba(0, 0, 0, 0.5);       /* dark transparent overlay */
+}
+
+/* ---------------------------------- */
+/* OVERLAY TEXT ON HERO IMAGE CARD   */
+/* ---------------------------------- */
+
+.overlay-card {
+  position: relative;                         /* stacks above ::before */
+  z-index: 2;                                 /* ensures it's on top */
+  padding: 2rem;
+  color: white;                               /* default text color */
+  display: flex;                              /* center content */
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.overlay-card h2 {
+  font-size: 1.6rem;                          /* headline size */
+  font-weight: 400;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.overlay-card p {
+  font-size: 1.125rem;                        /* paragraph size */
+  line-height: 1.6;                           /* improve readability */
+  margin-bottom: 1.5rem;
+  color: white;
+}
+
+/* ---------------------------------- */
+/* BUTTONS (Primary and Secondary)   */
+/* ---------------------------------- */
+
+.btn-primary,
+.btn-secondary {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;                     /* button padding */
+  margin-right: 1rem;
+  border-radius: 8px;
+  font-size: 1rem;                            /* text size */
+  text-decoration: none;
+  background-color: #0271d2;                 /* NOAA blue */
+  color: white;
+  border: none;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.btn-primary:hover,
+.btn-secondary:hover {
+  background-color: #004785;                 /* darker on hover */
+  color: white;
+}
+
+/* ---------------------------------- */
+/* NEWS CARD (Right-hand homepage)   */
+/* ---------------------------------- */
+
+.news-card {
+  height: 450px;                              /* matches image card */
+  background-color: #f9fafc;                 /* light neutral */
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);  /* subtle elevation */
+  font-size: 1.15rem;
+  line-height: 1.7;
+  overflow-y: auto;                           /* scrolls when full */
+}
+
+.news-header {
+  display: flex;                              /* aligns title and link */
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.news-header h3 {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.news-header a {
+  font-size: 0.95rem;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.news-header a:hover {
+  text-decoration: underline;
+}
+
+.news-item {
+  margin-bottom: 1.8rem;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 1rem;
+}
+
+.news-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.news-item strong {
+  font-size: 1.05rem;                         /* emphasize date/title */
+}
+
+.news-item a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.news-item a:hover {
+  text-decoration: underline;
+}
+
+.news-date {
+  font-size: 1rem;
+  color: #555;
+  margin-top: 0.4rem;
+}
+
+.news-title {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 0.4rem;
+  margin-top: 0;
+  color: #014077;                            /* deep ocean blue */
+}
+
+/* ---------------------------------- */
+/* GENERAL PURPOSE CARD STYLING      */
+/* ---------------------------------- */
+
+.card {
+  background: white;                          /* card background */
+  border-radius: 0.75rem;                     /* rounded corners */
+  padding: 1.5rem;                            /* interior spacing */
+  box-shadow: 0 0 12px rgba(0,0,0,0.05);      /* subtle shadow */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 1rem;                            /* base text size */
+  line-height: 1.4;                           /* improve readability */
+}
+
+.card .btn-primary {
+  margin-top: auto;                           /* pushes button to bottom */
+  align-self: start;                          /* left-aligns button */
+}
+
+.card h3 {
+  font-size: 1.25rem;                         /* larger title */
+  font-weight: 700;                           /* bold */
+  color: #1a1a1a;                             /* dark grey */
+  margin-bottom: 0.5rem;                      /* spacing below title */
+}
+
+.card p {
+  margin-bottom: 1rem;                        /* spacing before button */
+  color: #333;                                /* medium-dark text */
+}
+
+/* ---------------------------------- */
+/* FILTER BUTTONS & PANELS           */
+/* ---------------------------------- */
+
+.filter-btn {
+  background: #e6e6e6;                        /* light grey background */
+  border: none;
+  border-radius: 5px;                         /* rounded corners */
+  padding: 0.5rem 1rem;                       /* button size */
+  margin-right: 0.5rem;
+  font-size: 0.95rem;
+  cursor: pointer;                            /* pointer on hover */
+}
+
+.filter-btn:hover {
+  background: #d0d0d0;                        /* slightly darker on hover */
+}
+
+.category-filter {
+  background-color: #f5f5f5;                  /* light background */
+  padding: 20px;                              /* spacing inside */
+  border-radius: 20px;                        /* rounded panel */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;                    /* center horizontally */
+  align-items: center;                        /* center vertically */
+  margin-bottom: 20px;
+  text-align: center;
+  line-height: 20px;
+  text-size-adjust: 100%;
+}
+
+.category-filter label {
+  font-size: 1rem;
+  display: inline-flex;                       /* keeps text and radio aligned */
+  align-items: center;
+  gap: 0.4rem;                                /* spacing between text and radio */
+  cursor: pointer;
+  white-space: nowrap;
+  padding: 0;
+  margin: 0 0.75rem;                          /* horizontal spacing */
+  background: none;
+  border: none;
+  border-radius: 0;
+  line-height: 1;
+}
+
+.category-filter input[type="radio"] {
+  transform: scale(0.9);                      /* slightly smaller radio */
+}
+
+/* ---------------------------------- */
+/* DATA CATALOG TOGGLES & DROPDOWNS  */
+/* ---------------------------------- */
+
+td.title-toggle {
+  cursor: pointer;                           /* clickable cell */
+  color: #007bff;                            /* blue text */
+  text-decoration: underline;                /* looks like a link */
+}
+
+td.title-toggle:hover {
+  color: #0056b3;                            /* darker on hover */
+}
+
+.catalog-description {
+  padding: 1rem;
+  font-size: 0.95rem;                        /* readable size */
+  color: #444;                               /* dark grey */
+  background-color: #f9f9f9;                 /* soft background */
+  border-top: 1px solid #ddd;                /* separator line */
+}
+
+.erddap-select {
+  padding: 0.3rem;
+  font-size: 0.95rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;                    /* standard dropdown border */
+}
+
+.access-buttons {
+  text-align: center;                        /* center-aligns buttons in cell */
+}
+
+.access-dropdown {
+  width: 140px;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  font-weight: 600;
+  color: #fff;
+  background-color: #0271d2;                /* NOAA blue */
+  border: none;
+  appearance: none;
+  cursor: pointer;
+  text-align: center;
+
+  /* adds a downward arrow icon */
+  background-image: url("data:image/svg+xml,%3Csvg%20width%3D'12'%20height%3D'12'%20xmlns%3D'http%3A//www.w3.org/2000/svg'%3E%3Cpath%20d%3D'M2%204l4%204%204-4'%20stroke%3D'%23fff'%20fill%3D'none'%20stroke-width%3D'1.5'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  background-size: 0.6rem;
+}
+
+.access-dropdown:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(2, 113, 210, 0.3); /* blue focus ring */
+}
+
+.key-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.key-filters label {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.key-filters select {
+  margin-left: 0.5rem;
+  padding: 0.35rem 0.6rem;
+  font-size: 0.95rem;
+}
+
+.filter-panel select.form-select {
+  font-size: 1rem;
+  padding: 0.6rem;
+  border-radius: 0.5rem;
+}
+
+.filter-panel label {
+  font-size: 1.1rem;
+  margin-bottom: 0.25rem;
+  display: block;
+}
+
+.filter-panel hr {
+  border: none;
+  border-top: 2px solid #dee2e6;
+}
+.nav-tabs .nav-link.active {
+  background-color: #f8f9fa;
+  border-color: #dee2e6 #dee2e6 #fff;
+}
+
+/* ---------------------------------- */
+/* ACCORDIONS & DETAILS ELEMENTS     */
+/* ---------------------------------- */
+
+.full-width-accordion .accordion {
+  width: 100%;                               /* ensures full width container */
+}
+
+.full-width-accordion .accordion-item {
+  width: 100%;                               /* each accordion item spans full width */
+}
+
+.full-width-accordion .accordion-body {
+  max-width: 100%;                           /* remove any internal width restriction */
+}
+
+.full-width-accordion {
+  padding: 0;
+  margin: 0;                                 /* reset spacing */
+}
+
+/* Style for <details> and <summary> blocks */
+details {
+  background-color: #f8f9fa;                 /* matches Lux theme */
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #dee2e6;                 /* light border */
+  color: #212529;                            /* base text color */
+  font-size: 1.1rem;                         /* slightly larger text */
+}
+
+details summary {
+  color: #212529;
+  font-weight: 600;                          /* bold summary */
+  font-size: 1.2rem;
+  cursor: pointer;                           /* pointer cursor on hover */
+}
+
+details a {
+  color: #0d6efd;                            /* link color */
+  text-decoration: underline;                /* underline to indicate link */
+}
+
+details a:hover {
+  color: #0a58ca;                            /* hover color */
+  text-decoration: none;                     /* remove underline on hover */
+}
+
+
+.erddap-dropdown {
+  background-color: #f5f5f5;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 0.75rem;
+  margin-bottom: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+/* Blue on hover */
+.erddap-dropdown:hover {
+  background-color: #e8f3ff;
+}
+
+.erddap-card h3 {
+  color: #003366;
+  font-weight: bold;
+}
+
+.right-dropdowns summary {
+  color: #003366;
+  font-weight: bold;
+}
+
+.dropdown-heading {
+  font-size: 1.25rem;
+  color: #003366;
+}
+
+/* Remove the icon from all callouts */
+.callout .callout-icon-container {
+  display: none;
+}
+
+/* Optional: remove space where icon used to be */
+.callout .callout-title-container {
+  padding-left: 0.5rem;
+}
+
+/* Increase callout title font size */
+.callout .callout-header {
+  font-size: 1.25rem !important;
+  font-weight: 600;
+}
+
+/* Increase callout body (description) font size */
+.callout .callout-body {
+  font-size: 1.1rem !important;
+  line-height: 1.6;
+}
+
+.project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;    /* or space-between, space-around */
+  gap: 1.5rem;
+  max-width: 1000px;          /* controls 3-up fit */
+  margin: 0 auto;
+}
+
+.project-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: white;
+  transition: box-shadow 0.2s ease;
+  text-align: center;
+  width: 300px;
+  cursor: pointer;
+}
+
+.project-card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.project-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  object-position: center;
+  margin-top: -1.75rem;
+}
+
+.project-card h3 {
+  margin: 0.75rem 1rem 0.25rem;
+  font-size: 1.2rem;
+  margin-top: -1rem;
+}
+
+.project-card button {
+  margin: 0.5rem 1rem 1rem;
+  background: none;
+  border: none;
+  color: #0077b6;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* ---------------------------------- */
+/* MODAL (Lightbox Image Viewer)     */
+/* ---------------------------------- */
+
+.modal {
+  display: none;                              /* hidden by default */
+  position: fixed;
+  z-index: 9999;                              /* highest layer */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 8rem;                          /* vertical spacing from top */
+  background-color: rgba(0, 0, 0, 0.6);       /* dark semi-transparent bg */
+  overflow-y: auto;                           /* scroll if needed */
+  box-sizing: border-box;                     /* include padding in size */
+}
+
+.modal-content {
+  background-color: white;
+  margin: auto;
+  padding: 2rem;
+  padding-top: 0 !important;                  /* override if necessary */
+  border-radius: 0.5rem;                      /* rounded corners */
+  max-width: 900px;
+  width: 100%;
+  position: relative;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* soft outer glow */
+  overflow: visible;                          /* prevent scroll inside */
+}
+
+.modal-content h2 {
+  margin-bottom: -2rem;                       /* reduce gap */
+}
+
+.close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  color: #888;                                /* muted grey */
+  font-size: 1.5rem;
+  cursor: pointer;                            /* clickable icon */
+}
+
+.modal.show {
+  display: block;                             /* makes modal visible */
+  animation: fadeIn 0.3s ease-in-out;         /* fade-in animation */
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.modal-section {
+  margin-bottom: 0.5rem;                      /* vertical spacing */
+}
+
+.modal-section h4 {
+  margin-bottom: 0.25rem;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #003f5c;                             /* dark blue */
+}
+
+.modal-section p {
+  margin: 0;
+  line-height: 1.2;
+  font-size: 0.95rem;
+}
+
+.modal-columns {
+  display: grid;
+  grid-template-columns: 400px 400px;         /* 2-column layout */
+  gap: 2rem;                                  /* space between columns */
+  margin-top: 1rem;
+}
+
+.modal-column {
+  display: flex;
+  flex-direction: column;                     /* vertical stack */
+}
+
+.modal-column h4 {
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #003f5c;
+}
+
+.modal-column p {
+  font-size: 0.95rem;
+  line-height: 1.4;
+  margin-bottom: 0.5rem;
+}
+
+.modal-column .btn {
+  margin-top: auto;
+  align-self: flex-end;                       /* right-align button */
+}
+
+.modal-top-image {
+  width: 400px;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 0.25rem;
+  padding-top: 1.5rem;
+}
+
+/* ---------------------------------- */
+/* TUTORIAL GRID + CARD STYLING      */
+/* ---------------------------------- */
+
+.tutorial-grid {
+  display: flex;                              /* horizontal card layout */
+  flex-wrap: wrap;                            /* wrap to next line if needed */
+  gap: 2rem;                                  /* space between cards */
+  justify-content: center;                    /* center on page */
+  max-width: 1200px;                          /* container width */
+  margin: 0 auto;                             /* center in page */
+}
+
+.tutorial-card {
+  background: white;                          /* card bg */
+  border-radius: 10px;                        /* rounded corners */
+  padding: 1rem;
+  width: 350px;                               /* fixed card width */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);     /* subtle shadow */
+  display: flex;
+  flex-direction: column;
+}
+
+.tutorial-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;                          /* maintain aspect ratio */
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  cursor: zoom-in;                            /* indicates enlarging behavior */
+  transition: transform 0.2s ease;            /* smooth hover effect */
+}
+
+.tutorial-card img:hover {
+  transform: scale(1.02);                     /* slight zoom on hover */
+}
+
+.tags {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #555;                                 /* dark text */
+  background: #e0e7ff;                         /* light blue background */
+  padding: 0.3rem 0.5rem;                      /* pill shape */
+  border-radius: 5px;
+  margin-bottom: 0.5rem;
+  display: inline-block;                       /* makes it inline but block-like */
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.tutorial-card h3 {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  text-align: center;
+}
+
+.tutorial-card p {
+  font-size: 0.85rem;
+  color: #444;                                 /* dark gray */
+  margin: 0.25rem 0;
+}
+
+/* ---------------------------------- */
+/* STACKED INFO BLOCKS               */
+/* ---------------------------------- */
+
+.stacked-info {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.info-block {
+  padding: 2rem 4vw;                           /* add horizontal breathing room */
+  border-radius: 1rem;                         /* rounded edges */
+  box-shadow: none;
+  border-top: 1px solid #ddd;                 /* top separator */
+  border-bottom: 1px solid #ddd;              /* bottom separator */
+}
+
+.info-blue {
+  background-color: #eaf4fb;                  /* NOAA-like light blue */
+}
+
+.info-gray {
+  background-color: #f3f3f3;                  /* neutral background */
+}
+
+/* ---------------------------------- */
+/* ABOUT / TEAM CARDS                */
+/* ---------------------------------- */
+
+.about-card {
+  background: #f8f9fa;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  box-shadow: 0 0 12px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 1rem;                             /* base font size */
+  line-height: 1.4;                            /* improved readability */
+}
+
+.about-card h3 {
+  font-size: 1.25rem;                          /* title size */
+  font-weight: 700;
+  color: #1a1a1a;                              /* deep charcoal */
+  margin-bottom: 0.5rem;
+}
+
+.about-card p {
+  margin-bottom: 1rem;
+  color: #333;                                 /* dark grey text */
+}
+
+.team-card {
+  background: #eaf4fb;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  box-shadow: 0 0 12px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.team-card h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 0.5rem;
+}
+
+.team-card p {
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+/* ------------- */
+/* PEOPLE PAGE   */
+/* ------------- */
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+/* Individual bubble */
+.contact-person {
+  background: #f8f9fa;
+  border-radius: 0.9rem;
+  padding: 1.25rem 1.5rem;
+  border: 1px solid rgba(2, 113, 210, 0.15); /* subtle NOAA blue */
+}
+
+/* Name */
+.contact-person h3 {
+  margin-bottom: 0.3rem;
+  color: #0271d2; /* NOAA blue */
+  font-size: 1.05rem;
+}
+
+/* Role */
+.contact-role {
+  display: block;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* ----------------- */
+/* CONTACT US PAGE   */
+/* ----------------- */
+
+input, textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 0.95rem;
+}
+
+button.btn-primary {
+  background-color: #003366;
+  color: white;
+  padding: 0.5rem 1.25rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button.btn-primary:hover {
+  background-color: #005da8;
+}
+
+/* ---------------------------------- */
+/* REGIONAL NODE COLOR CODES          */
+/* ---------------------------------- */
+
+.central-op {
+  color: black;
+}
+
+.great-lakes {
+  color: #39b54a; /* green */
+}
+.great-lakes:hover {
+  text-decoration: underline;
+  color: #2e8f3f;            
+}
+
+.central-pacific {
+  color: #0054a6; /* navy blue */
+}
+
+.east-coast {
+  color: #ec008c; /* magenta */
+}
+.east-coast:hover {
+  text-decoration: underline;
+  color: #c80178;            
+}
+
+.gulf-caribbean {
+  color: #00aeef; /* bright cyan */
+}
+.gulf-caribbean:hover {
+  text-decoration: underline;
+  color: #0293c8;            
+}
+
+.water-prediction {
+  color: #8c6239; /* brown */
+}
+.water-prediction:hover {
+  text-decoration: underline;
+  color: #65472a;            
+}
+
+.polarwatch {
+  color: #92278f; /* purple */
+}
+.polarwatch:hover {
+  text-decoration: underline;
+  color: #782175;            
+}
+
+.west-coast {
+  color: #f7941d; /* orange */
+}
+
+/* ---------------------------- */
+/* Project topbar: true center  */
+/* ---------------------------- */
+
+.project-topbar{
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: .65rem 1.1rem;
+  margin: 0 0 1.25rem 0;
+
+  background: #f2f4f6;
+  border-bottom: 2px solid rgba(0,0,0,.08);
+}
+
+/* Brand stays left and is vertically centered */
+.project-topbar .project-brand{
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+  white-space: nowrap;
+}
+
+.project-topbar .project-brand-title{
+  line-height: 1;
+  display: flex;
+  align-items: center;
+}
+
+/* Nudge only if your PNG has transparent padding */
+.project-topbar .project-brand-logo{
+  height: 80px;
+  width: auto;
+  display: block;
+  transform: translateY(1px); /* try 0px, 1px, or 2px */
+}
+
+/* Tabs are centered across the bar */
+.project-topbar .project-tabs{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+  gap: 0;
+  width: 60%;
+  max-width: 900px;
+}
+
+.project-tab{
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+/* Mobile: stack instead of absolute centering */
+@media (max-width: 900px){
+  .project-topbar{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: .6rem;
+  }
+  .project-topbar .project-tabs{
+    position: static;
+    transform: none;
+    left: auto;
+    justify-content: flex-start;
+  }
+}
+
+
+/* ---------------------- */
+/* APPLICATIONS ECOCAST   */
+/* ---------------------- */
+
+.ecocast-hero {
+  text-align: right;
+  margin-bottom: 2rem;
+  position: relative;
+  margin-top: 1rem;
+}
+
+.hero-img {
+  width: 100%;
+  max-height: 400px;
+  display: block;
+  object-fit: cover;
+  border-radius: 0;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.image-caption {
+  font-size: 0.85rem;
+  font-style: italic;
+  color: #555;
+  margin-top: 0.25rem;
+  padding-right: 0.5rem;
+  display: block;
+}
+
+.ecocast-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.ecocast-card {
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  text-align: left;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ecocast-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.ecocast-card h3 {
+  margin-top: 0;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+.btn-outline-primary {
+  margin-top: 1rem;
+  padding: 0.5rem 1.2rem;
+  border: 2px solid black;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: all 0.2s ease;
+}
+
+.btn-outline-primary:hover {
+  background-color: black;
+  color: white;
+}
+
+.callout-note.ecocast-dropdown {
+  border-left: 6px solid #0077c8;
+  background-color: #f9f9f9;
+}
+
+.callout-note.ecocast-dropdown .callout-header {
+  font-weight: 600;
+  color: black;
+}
+
+/* ------------------------- */
+/* APPLICATIONS TURTLEWATCH  */
+/* ------------------------- */
+
+/* Remove Quarto’s default gradient fade from title banners */
+.quarto-title-block .quarto-title-banner {
+  background-image: none !important;
+  -webkit-mask-image: none !important;
+  mask-image: none !important;
+  box-shadow: none !important;
+}
+
+/* Ensure TurtleWatch hero images stay clean */
+.turtlewatch-hero .hero-img {
+  border-radius: 0 !important;
+  object-fit: cover;
+  box-shadow: none;
+}
+
+.hero-img {
+  width: 100%;
+  max-height: 400px;
+  display: block;
+  object-fit: cover;
+  border-radius: 0;
+}
+
+.image-caption {
+  font-size: 0.85rem;
+  font-style: italic;
+  color: #555;
+  margin-top: 0.25rem;
+  padding-right: 0.5rem;
+  display: block;
+}
+
+.turtlewatch-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.turtlewatch-card {
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  text-align: left;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.turtlewatch-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.turtlewatch-card h3 {
+  margin-top: 0;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+.btn-outline-primary {
+  margin-top: 1rem;
+  padding: 0.5rem 1.2rem;
+  border: 2px solid black;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: all 0.2s ease;
+}
+
+.btn-outline-primary:hover {
+  background-color: black;
+  color: white;
+}
+
+.callout-note.turtlewatch-dropdown {
+  border-left: 6px solid #0077c8;
+  background-color: #f9f9f9;
+}
+
+.callout-note.turtlewatch-dropdown .callout-header {
+  font-weight: 600;
+  color: black;
+}
+
+
+/* -------------------------- */
+/* Coastal Conditions Page    */
+/* -------------------------- */
+
+/* layout styles */
+.coastal-columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  align-items: flex-start;
+  margin-bottom: 2em;
+}
+
+.coastal-column {
+  flex: 1;
+  min-width: 300px; /* ensures stacking on narrow screens */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.coastal-card {
+  background: #f8f9fa;
+  padding: 1em 1.25em;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+
+.coastal-card a {
+  color: #2b6da8; /* NOAA blue for links */
+  text-decoration: underline;
+}
+
+/* Ensure figures in cards look clean */
+.coastal-card img {
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  margin-bottom: 1em;
+}
+
+/* Replace boring bullets with custom ones */
+.coastal-card ul {
+  list-style: none;        /* remove default bullets */
+  padding-left: 1.2em;     /* indent */
+}
+
+.coastal-card ul li {
+  position: relative;
+  margin-bottom: 0.5em;
+}
+
+.coastal-card ul li::before {
+  content: "◆";            
+  color: #2b6da8;          /* NOAA blue */
+  font-size: 0.8em;
+  position: absolute;
+  left: -1.2em;
+  top: 0.2em;
+}
+
+/* Base collapsible card */
+.coastal-faq {
+  margin-bottom: 1em;
+  border-radius: 8px;
+  border: 1px solid #dee2e6;
+  background: #f8f9fa;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  overflow: hidden;
+}
+
+/* Summary = card header */
+.coastal-faq summary {
+  cursor: pointer;
+  padding: 0.25em 0.5em;
+  font-weight: 600;
+  color: #2b6da8; /* NOAA blue */
+  background: #f0f6fa;
+  list-style: none; /* remove triangle marker */
+}
+
+.coastal-faq summary::-webkit-details-marker,
+.coastal-faq summary::marker {
+  display: none; /* hide disclosure triangle */
+}
+
+/* Content area = card body */
+.coastal-faq[open] {
+  background: #fff;
+}
+
+.coastal-faq[open] summary {
+  border-bottom: 1px solid #dee2e6;
+  background: #e9f3fb;
+}
+
+.coastal-faq p,
+.coastal-faq ul {
+  padding: 0.5em 0.75em;
+  margin: 0.25em 0;
+}
+
+/* Inline dropdown container */
+.report-dropdowns {
+  display: flex;
+  gap: 10px;   /* space between dropdowns */
+  margin-top: 0.5em;
+}
+
+/* Dropdown styling */
+.report-dropdowns select {
+  background-color: #2b6da8;   /* NOAA blue */
+  color: #fff !important;      /* force white text */
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  padding: 0.5em 1.25em;
+  text-transform: none;        /* prevent uppercase */
+  text-decoration: none !important; /* remove underline */
+  letter-spacing: normal;      /* reset spacing */
+}
+
+/* Hover and focus */
+.report-dropdowns select:hover,
+.report-dropdowns select:focus {
+  background-color: #244f7a;   /* darker NOAA blue */
+  color: #fff !important;      /* keep white text */
+  text-decoration: none !important; /* prevent underline on hover */
+}
+
+.map-slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.map-slider .prev,
+.map-slider .next {
+  background: #005f9e;  /* NOAA dark blue */
+  color: #fff;
+  border: none;
+  padding: 0.5rem 0.9rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin: 0 0.25rem;
+  transition: background 0.2s;
+}
+
+.map-slider .prev:hover,
+.map-slider .next:hover {
+  background: #0077c8;  /* lighter blue hover */
+}
+
+.map-slider img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.map-caption {
+  font-size: 0.85rem;
+  color: #444;
+  text-align: center;
+  max-width: 600px;
+}
+
+.map-subcard {
+  background: #fff;                  /* light gray-blue */
+  padding: 1rem 1.25rem;
+  border: 2px solid #f0f0f0;
+  border-radius: 8px;
+  margin-bottom: 1rem;                  /* space between sections */
+  box-shadow: 0 1px 3px #fff; /* subtle lift */
+}
+
+.map-subcard strong {
+  color: #003366;                       /* NOAA blue for key labels */
+  font-weight: bold;
+}
+
+/* Table styling */
+.map-subcard table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.map-subcard th {
+  text-align: left;
+  font-weight: 600;
+  border-bottom: 2px solid #e5e7eb;
+  padding: 0.5rem;
+}
+
+.map-subcard td {
+  padding: 0.4rem 0.5rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+/* Small notes */
+.map-subcard small {
+  display: block;
+  margin-top: 0.5rem;
+  color: #666;
+  font-style: italic;
+}
+
+.map-subcard tr:nth-child(even) {
+  background: #f4f9fc; /* faint NOAA blue tint */
+}
+
+
+/* ---------------------------------- */
+/* SATELLITE COURSE PROJECT PAGE      */
+/* ---------------------------------- */
+
+
+/* layout styles */
+.sat-columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  align-items: flex-start;
+  margin-bottom: 2em;
+}
+
+.sat-column {
+  flex: 1;
+  min-width: 300px; /* ensures stacking on narrow screens */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sat-card {
+  background: #f8f9fa;
+  padding: 1em 1.25em;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+
+.sat-card a {
+  color: #2b6da8; /* NOAA blue for links */
+  text-decoration: underline;
+}
+
+/* Ensure figures in sat cards look clean */
+.sat-card img {
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  margin-bottom: 1em;
+}
+
+/* Replace boring bullets with custom ones */
+.sat-card ul {
+  list-style: none;        /* remove default bullets */
+  padding-left: 1.2em;     /* indent */
+}
+
+.sat-card ul li {
+  position: relative;
+  margin-bottom: 0.5em;
+}
+
+.sat-card ul li::before {
+  content: "◆";            
+  color: #2b6da8;          /* NOAA blue */
+  font-size: 0.8em;
+  position: absolute;
+  left: -1.2em;
+  top: 0.2em;
+}
+
+.sat-disclaimer {
+  background: #f1f3f5;     /* lighter gray */
+  padding: 1em 1.25em;
+  border-radius: 6px;
+  font-size: 0.85em;       /* slightly smaller text */
+  line-height: 1.5;
+  border-left: 4px solid #6c757d; /* accent bar */
+  margin-top: 2em;
+}
+.sat-disclaimer a {
+  color: #2b6da8; /* NOAA blue for links */
+  text-decoration: underline;
+}
+
+/* Base collapsible card */
+.sat-faq {
+  margin-bottom: 1em;
+  border-radius: 8px;
+  border: 1px solid #dee2e6;
+  background: #f8f9fa;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  overflow: hidden;
+}
+
+/* Summary = card header */
+.sat-faq summary {
+  cursor: pointer;
+  padding: 0.25em 0.5em;
+  font-weight: 600;
+  color: #2b6da8; /* NOAA blue */
+  background: #f0f6fa;
+  list-style: none; /* remove triangle marker */
+}
+
+.sat-faq summary::-webkit-details-marker,
+.sat-faq summary::marker {
+  display: none; /* hide disclosure triangle */
+}
+
+/* Content area = card body */
+.sat-faq[open] {
+  background: #fff;
+}
+
+.sat-faq[open] summary {
+  border-bottom: 1px solid #dee2e6;
+  background: #e9f3fb;
+}
+
+.sat-faq p,
+.sat-faq ul {
+  padding: 0.5em 0.75em;
+  margin: 0.25em 0;
+}
+
+/* ------------------ */
+/* CUSTOM BUTTONS     */
+/* ------------------ */
+
+.btn-noaa {
+  background-color: #2b6da8;   /* NOAA blue */
+  color: #fff !important;      /* force white text */
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  padding: 0.5em 1.25em;
+  text-transform: none;        /* prevent uppercase */
+  text-decoration: none !important; /* remove underline */
+  letter-spacing: normal;      /* reset spacing */
+}
+
+.btn-noaa:hover {
+  background-color: #244f7a;   /* darker NOAA blue */
+  color: #fff !important;      /* keep white text */
+  text-decoration: none !important; /* prevent underline on hover */
+}
+
+/* ------------------- */
+/* ECOCAST PROJECT     */
+/* ------------------- */
+
+.ecocast-page .ecocast-hero {
+  text-align: right;
+  margin-bottom: 2rem;
+  position: relative;
+  margin-top: 1rem;
+}
+
+.ecocast-page .hero-img {
+  width: 100%;
+  max-height: 500px;
+  display: block;
+  object-fit: cover;
+  border-radius: 0;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.ecocast-page .image-caption {
+  font-size: 0.85rem;
+  font-style: italic;
+  color: #555;
+  margin-top: 0.25rem;
+  padding-right: 0.5rem;
+  display: block;
+}
+
+.ecocast-page .ecocast-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.ecocast-page .ecocast-card {
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  text-align: left;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ecocast-page .ecocast-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.ecocast-page .ecocast-card h3 {
+  margin-top: 0;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+.ecocast-page .btn-outline-primary {
+  margin-top: 1rem;
+  padding: 0.5rem 1.2rem;
+  border: 2px solid black;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: all 0.2s ease;
+}
+
+.ecocast-page .btn-outline-primary:hover {
+  background-color: black;
+  color: white;
+}
+
+.ecocast-page .callout-note.ecocast-dropdown {
+  border-left: 6px solid #0077c8;
+  background-color: #f9f9f9;
+}
+
+.ecocast-page .callout-note.ecocast-dropdown .callout-header {
+  font-weight: 600;
+  color: black;
+}
+
+/* EcoCast layout styles */
+.ecocast-page .ecocast-columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  align-items: flex-start;
+  margin-bottom: 2em;
+}
+
+.ecocast-page .ecocast-column {
+  flex: 1;
+  min-width: 300px; /* ensures stacking on narrow screens */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.ecocast-page .ecocast-card {
+  background: #f8f9fa;
+  padding: 1em 1.25em;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+
+.ecocast-page .ecocast-card a {
+  color: #2b6da8; /* NOAA blue for links */
+  text-decoration: underline;
+}
+
+/* Ensure figures in EcoCast cards look clean */
+.ecocast-page .ecocast-card img {
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  margin-bottom: 1em;
+}
+
+/* Replace boring bullets with custom ones */
+.ecocast-page .ecocast-card ul {
+  list-style: none;        /* remove default bullets */
+  padding-left: 1.2em;     /* indent */
+}
+
+.ecocast-page .ecocast-card ul li {
+  position: relative;
+  margin-bottom: 0.5em;
+}
+
+.ecocast-page .ecocast-card ul li::before {
+  content: "◆";            
+  color: #2b6da8;          /* NOAA blue */
+  font-size: 0.8em;
+  position: absolute;
+  left: -1.2em;
+  top: 0.2em;
+}
+
+.ecocast-page .ecocast-disclaimer {
+  background: #f1f3f5;     /* lighter gray */
+  padding: 1em 1.25em;
+  border-radius: 6px;
+  font-size: 0.85em;       /* slightly smaller text */
+  line-height: 1.5;
+  border-left: 4px solid #6c757d; /* accent bar */
+  margin-top: 2em;
+}
+.ecocast-page .ecocast-disclaimer a {
+  color: #2b6da8; /* NOAA blue for links */
+  text-decoration: underline;
+}
+
+/* Make summary look like a blue Bootstrap-style button */
+.ecocast-page .ecocast-buttons summary {
+  display: inline-block;
+  background-color: #2b6da8; /* NOAA blue */
+  color: #fff;
+  padding: 0.5em 1em;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  border: none;
+}
+
+.ecocast-page .ecocast-buttons summary:hover {
+  background-color: #244f7a; /* darker blue on hover */
+}
+
+/* Remove the ugly default <details> border and triangle */
+.ecocast-page .ecocast-buttons {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+.ecocast-page .ecocast-buttons summary::-webkit-details-marker {
+  display: none;
+}
+.ecocast-page .ecocast-buttons summary::marker {
+  display: none;
+}
+
+.ecocast-page .noaa-blue {
+  color: #2b6da8;
+}
+
+/* Base collapsible card */
+.ecocast-page .ecocast-faq {
+  margin-bottom: 1em;
+  border-radius: 8px;
+  border: 1px solid #dee2e6;
+  background: #f8f9fa;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  overflow: hidden;
+}
+
+/* Summary = card header */
+.ecocast-page .ecocast-faq summary {
+  cursor: pointer;
+  padding: 0.25em 0.5em;
+  font-weight: 600;
+  color: #2b6da8; /* NOAA blue */
+  background: #f0f6fa;
+  list-style: none; /* remove triangle marker */
+}
+
+.ecocast-page .ecocast-faq summary::-webkit-details-marker,
+.ecocast-page .ecocast-faq summary::marker {
+  display: none; /* hide disclosure triangle */
+}
+
+/* Content area = card body */
+.ecocast-page .ecocast-faq[open] {
+  background: #fff;
+}
+
+.ecocast-page .ecocast-faq[open] summary {
+  border-bottom: 1px solid #dee2e6;
+  background: #e9f3fb;
+}
+
+.ecocast-page .ecocast-faq p,
+.ecocast-page .ecocast-faq ul {
+  padding: 0.5em 0.75em;
+  margin: 0.25em 0;
+}
+
+/* EcoCast Map page: map + FAQ side-by-side */
+.ecocast-page .ecocast-sbs{
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(0, 0.75fr);
+  gap: 1.25rem;
+  align-items: start;
+}
+
+/* Prevent children from forcing wrapping */
+.ecocast-page .ecocast-sbs-left,
+.ecocast-page .ecocast-sbs-right{
+  min-width: 0;
+}
+
+/*Zoom out ONLY the EcoCast Map page */
+.ecocast-map-page .ecocast-map-zoom{
+  transform: scale(0.95);
+  transform-origin: top center;
+}
+
+.ecocast-page .project-topbar{
+  position: relative;
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3ren;
+
+  padding: .65rem 1.1rem;
+  margin: 0 0 1.25rem 0;
+
+  background: #f2f4f6;
+  border-bottom: 2px solid rgba(0,0,0,.08);
+}
+
+.ecocast-page .project-tab {
+  color: #6c757d;           /* lighter gray for inactive */
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+/* Hover */
+.ecocast-page .project-tab:hover {
+  color: #2b6da8;           /* NOAA-ish blue on hover */
+}
+
+/* ACTIVE PAGE */
+.ecocast-page .project-tabs a.project-tab.active {
+  color: #2b6da8;       /* NOAA blue */
+  font-weight: 700;
+  border-bottom: 2px solid #2b6da8;
+}
+
+/* Brand stays left and is vertically centered */
+.ecocast-page .project-topbar .project-brand{
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+  white-space: nowrap;
+}
+
+.ecocast-page .project-topbar .project-brand-title{
+  line-height: 1;
+  display: flex;
+  align-items: center;
+}
+
+/* Nudge only if your PNG has transparent padding */
+.ecocast-page .project-topbar .project-brand-logo{
+  height: 80px;
+  width: auto;
+  display: block;
+  transform: translateY(1px); /* try 0px, 1px, or 2px */
+}
+
+/* Tabs are centered across the bar */
+.ecocast-page .project-topbar .project-tabs{
+  position: static;          /* tabs now affect bar height */
+  transform: none;
+  left: auto;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+
+  width: auto;
+  gap: 4rem;
+  margin: 0;            /* center within bar */
+}
+
+.ecocast-page .project-tab{
+  font-size: 1.15rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* Mobile: stack instead of absolute centering */
+@media (max-width: 992px){
+
+  .ecocast-page .project-topbar{
+    flex-direction: column;
+    align-items: center;
+    gap: .75rem;
+  }
+
+  .ecocast-page .project-topbar .project-tabs{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: .75rem;
+
+    width: auto;
+  }
+
+  .ecocast-page .project-tab {
+    font-size: 1rem;
+    white-space: nowrap;
+  }
+}
+
+/* Mobile: stack */
+@media (max-width: 992px){
+  .ecocast-page .ecocast-sbs{
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ---------------------- */
+/* WHALEWATCH PROJECT     */
+/* ---------------------- */
+
+
+.whalewatch-page .whale-hero {
+  text-align: center;
+  background: #0e494e;  /* optional subtle background */
+}
+
+
+.whalewatch-page .whale-hero img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+
+  /* smoother side fade */
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 20%,
+    black 80%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 20%,
+    black 80%,
+    transparent 100%
+  );
+}
+
+.whalewatch-page .hero-caption{
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: right;
+}
+
+
+.whalewatch-page .image-caption {
+  font-size: 0.85rem;
+  font-style: italic;
+  color: #555;
+  margin-top: 0.25rem;
+  padding-right: 0.5rem;
+  display: block;
+  text-align: right;
+}
+
+.whalewatch-page .whale-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.whalewatch-page .whale-card {
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  text-align: left;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.whalewatch-page .whale-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.whalewatch-page .whale-card h3 {
+  margin-top: 0;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+.whalewatch-page .btn-outline-primary {
+  margin-top: 1rem;
+  padding: 0.5rem 1.2rem;
+  border: 2px solid black;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: all 0.2s ease;
+}
+
+.whalewatch-page .btn-outline-primary:hover {
+  background-color: black;
+  color: white;
+}
+
+.whalewatch-page .callout-note.whale-dropdown {
+  border-left: 6px solid #0077c8;
+  background-color: #f9f9f9;
+}
+
+.whalewatch-page .callout-note.whale-dropdown .callout-header {
+  font-weight: 600;
+  color: black;
+}
+
+/* whale layout styles */
+.whalewatch-page .whale-columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  align-items: flex-start;
+  margin-bottom: 2em;
+}
+
+.whalewatch-page .whale-column {
+  flex: 1;
+  min-width: 300px; /* ensures stacking on narrow screens */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.whalewatch-page .whale-card {
+  background: #f8f9fa;
+  padding: 1em 1.25em;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+
+.whalewatch-page .whale-card a {
+  color: #2b6da8; /* NOAA blue for links */
+  text-decoration: underline;
+}
+
+/* Ensure figures in whale cards look clean */
+.whalewatch-page .whale-card img {
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  margin-bottom: 1em;
+}
+
+/* Replace boring bullets with custom ones */
+.whalewatch-page .whale-card ul {
+  list-style: none;        /* remove default bullets */
+  padding-left: 1.2em;     /* indent */
+}
+
+.whalewatch-page .whale-card ul li {
+  position: relative;
+  margin-bottom: 0.5em;
+}
+
+.whalewatch-page .whale-card ul li::before {
+  content: "◆";            
+  color: #2b6da8;          /* NOAA blue */
+  font-size: 0.8em;
+  position: absolute;
+  left: -1.2em;
+  top: 0.2em;
+}
+
+.whalewatch-page .whale-disclaimer {
+  background: #f1f3f5;     /* lighter gray */
+  padding: 1em 1.25em;
+  border-radius: 6px;
+  font-size: 0.85em;       /* slightly smaller text */
+  line-height: 1.5;
+  border-left: 4px solid #6c757d; /* accent bar */
+  margin-top: 2em;
+}
+
+.whalewatch-page .whale-disclaimer a {
+  color: #2b6da8; /* NOAA blue for links */
+  text-decoration: underline;
+}
+
+/* Make summary look like a blue Bootstrap-style button */
+.whalewatch-page .whale-buttons summary {
+  display: inline-block;
+  background-color: #2b6da8; /* NOAA blue */
+  color: #fff;
+  padding: 0.5em 1em;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  border: none;
+}
+
+.whalewatch-page .whale-buttons summary:hover {
+  background-color: #244f7a; /* darker blue on hover */
+}
+
+/* Remove the ugly default <details> border and triangle */
+.whalewatch-page .whale-buttons {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.whalewatch-page .whale-buttons summary::-webkit-details-marker {
+  display: none;
+}
+
+.whalewatch-page .whale-buttons summary::marker {
+  display: none;
+}
+
+.whalewatch-page .noaa-blue {
+  color: #2b6da8;
+}
+
+
+/* Base collapsible card */
+.whalewatch-page .whale-faq {
+  margin-bottom: 1em;
+  border-radius: 8px;
+  border: 1px solid #dee2e6;
+  background: #f8f9fa;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  overflow: hidden;
+}
+
+/* Summary = card header */
+.whalewatch-page .whale-faq summary {
+  cursor: pointer;
+  padding: 0.25em 0.5em;
+  font-weight: 600;
+  color: #2b6da8; /* NOAA blue */
+  background: #f0f6fa;
+  list-style: none; /* remove triangle marker */
+}
+
+.whalewatch-page .whale-faq summary::-webkit-details-marker,
+.whalewatch-page .whale-faq summary::marker {
+  display: none; /* hide disclosure triangle */
+}
+
+/* Content area = card body */
+.whalewatch-page .whale-faq[open] {
+  background: #fff;
+}
+
+.whalewatch-page .whale-faq[open] summary {
+  border-bottom: 1px solid #dee2e6;
+  background: #e9f3fb;
+}
+
+.whalewatch-page .whale-faq p,
+.whalewatch-page .whale-faq ul {
+  padding: 0.5em 0.75em;
+  margin: 0.25em 0;
+}
+
+.whalewatch-page .project-topbar{
+  position: relative;
+  flex-direction: row;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  height: 105px;
+
+  padding: .65rem 1.1rem;
+  margin: 0 0 1.25rem 0;
+
+  background: #f2f4f6;
+  border-bottom: 2px solid rgba(0,0,0,.08);
+}
+
+/* Brand stays left and is vertically centered */
+.whalewatch-page .project-topbar .project-brand{
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+  white-space: nowrap;
+}
+
+.whalewatch-page .project-topbar .project-brand-title{
+  line-height: 1;
+  display: flex;
+  align-items: center;
+}
+
+/* Nudge only if your PNG has transparent padding */
+.whalewatch-page .project-topbar .project-brand-logo{
+  height: 80px;
+  width: auto;
+  display: block;
+  transform: translateY(1px); /* try 0px, 1px, or 2px */
+}
+
+/* Tabs are centered across the bar */
+.whalewatch-page .project-topbar .project-tabs{
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+
+  gap: 2rem;
+  margin: 0;
+}
+
+.whalewatch-page .project-tab {
+  
+  color: #6c757d;           /* lighter gray for inactive */
+  text-decoration: none;
+  transition: color 0.2s ease;
+  font-size: 1.15rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* Hover */
+.whalewatch-page .project-tab:hover {
+  color: #2b6da8;           /* NOAA-ish blue on hover */
+}
+
+/* ACTIVE PAGE */
+.whalewatch-page .project-tabs a.project-tab.active {
+  color: #2b6da8;       /* NOAA blue */
+  font-weight: 700;
+  border-bottom: 2px solid #2b6da8;
+}
+
+/* Mobile: stack instead of absolute centering */
+@media (max-width: 900px){
+  .whalewatch-page .project-topbar{
+    flex-direction: column;
+    align-items: center;
+    gap: .75rem;
+  }
+  .whalewatch-page .project-topbar .project-tabs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: .75rem;
+
+    width: auto;
+  }
+
+  .whalewatch-page .project-tab {
+    font-size: 1rem;
+    white-space: nowrap;
+    text-align: center;
+  }
+}
+
+/* -------------------------------- */
+/* AFSC-STOCK-ASSESSMENT PROJECT    */
+/* -------------------------------- */
+
+/* Responsive grid: 2 columns normally, 1 column on narrow screens */
+.afsc-page .dashboard-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+@media (max-width: 900px) {
+  .afsc-page .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* NOAA-style button dropdown */
+.afsc-page .btn-noaa {
+  background-color: #2b6da8;   /* NOAA blue */
+  color: #fff !important;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  padding: 0.5em 2em 0.5em 1.25em; /* extra right padding for arrow */
+  text-transform: none;
+  text-decoration: none !important;
+  letter-spacing: normal;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  /* Add dropdown arrow */
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24'><path fill='white' d='M7 10l5 5 5-5z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 0.75em center;
+  background-size: 1em;
+}
+
+.afsc-page .btn-noaa:hover {
+  background-color: #244f7a;   /* darker NOAA blue */
+  color: #fff !important;
+  cursor: pointer;
+}
+
+.afsc-page .afsc-columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  align-items: flex-start;
+  margin-bottom: 2em;
+}
+
+.afsc-page .afsc-column {
+  flex: 1 1 0;
+  min-width: 300px; /* ensures stacking on narrow screens */
+}
+
+.afsc-page .dataset-details dt {
+  font-weight: bold;
+  color: #003366; /* NOAA blue */
+  margin-top: 0.5em;
+}
+
+.afsc-page .dataset-details dd {
+  margin: 0 0 0.75em 1em;
+}
+
+/* ----------------------- */
+/*  TURTLEWATCH PROJECT    */
+/* ----------------------- */
+
+.turtlewatch-page .alert-active {
+  background-color: red;
+}
+
+.turtlewatch-page .turtlewatch-hero {
+  text-align: right;
+  margin-bottom: 2rem;
+  position: relative;
+  margin-top: 1rem;
+}
+
+.turtlewatch-page .hero-img {
+  width: 100%;
+  max-height: 400px;
+  display: block;
+  object-fit: cover;
+  border-radius: 0;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.turtlewatch-page .image-caption {
+  font-size: 0.85rem;
+  font-style: italic;
+  color: #555;
+  margin-top: 0.25rem;
+  padding-right: 0.5rem;
+  display: block;
+}
+
+.turtlewatch-page .turtlewatch-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.turtlewatch-page .turtlewatch-card {
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  text-align: left;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.turtlewatch-page .turtlewatch-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.turtlewatch-page .turtlewatch-card h3 {
+  margin-top: 0;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+.turtlewatch-page .btn-outline-primary {
+  margin-top: 1rem;
+  padding: 0.5rem 1.2rem;
+  border: 2px solid black;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: all 0.2s ease;
+}
+
+.turtlewatch-page .btn-outline-primary:hover {
+  background-color: black;
+  color: white;
+}
+
+.turtlewatch-page .callout-note.turtlewatch-dropdown {
+  border-left: 6px solid #0077c8;
+  background-color: #f9f9f9;
+}
+
+.turtlewatch-page .callout-note.turtlewatch-dropdown .callout-header {
+  font-weight: 600;
+  color: black;
+}
+
+/* turtlewatch layout styles */
+.turtlewatch-page .turtlewatch-columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  align-items: flex-start;
+  margin-bottom: 2em;
+}
+
+.turtlewatch-page .turtlewatch-column {
+  flex: 1 1 0;
+  min-width: 300px; /* ensures stacking on narrow screens */
+}
+
+.turtlewatch-page .turtlewatch-card {
+  background: #f8f9fa;
+  padding: 1em 1.25em;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+
+.turtlewatch-page .turtlewatch-card a {
+  color: #2b6da8; /* NOAA blue for links */
+  text-decoration: underline;
+}
+
+/* Ensure figures in turtlewatch cards look clean */
+.turtlewatch-page .turtlewatch-card img {
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  margin-bottom: 1em;
+}
+
+/* Replace boring bullets with custom ones */
+.turtlewatch-page .turtlewatch-card ul {
+  list-style: none;        /* remove default bullets */
+  padding-left: 1.2em;     /* indent */
+}
+
+.turtlewatch-page .turtlewatch-card ul li {
+  position: relative;
+  margin-bottom: 0.5em;
+}
+
+.turtlewatch-page .turtlewatch-card ul li::before {
+  content: "◆";            
+  color: #2b6da8;          /* NOAA blue */
+  font-size: 0.8em;
+  position: absolute;
+  left: -1.2em;
+  top: 0.2em;
+}
+
+.turtlewatch-page .turtlewatch-disclaimer {
+  background: #f1f3f5;     /* lighter gray */
+  padding: 1em 1.25em;
+  border-radius: 6px;
+  font-size: 0.85em;       /* slightly smaller text */
+  line-height: 1.5;
+  border-left: 4px solid #6c757d; /* accent bar */
+  margin-top: 2em;
+}
+.turtlewatch-page .turtlewatch-disclaimer a {
+  color: #2b6da8; /* NOAA blue for links */
+  text-decoration: underline;
+}
+
+/* Make summary look like a blue Bootstrap-style button */
+.turtlewatch-page .turtlewatch-buttons summary {
+  display: inline-block;
+  background-color: #2b6da8; /* NOAA blue */
+  color: #fff;
+  padding: 0.5em 1em;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  border: none;
+}
+.turtlewatch-page .turtlewatch-buttons summary:hover {
+  background-color: #244f7a; /* darker blue on hover */
+}
+
+/* Remove the ugly default <details> border and triangle */
+.turtlewatch-page .turtlewatch-buttons {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.turtlewatch-page .turtlewatch-buttons summary::-webkit-details-marker {
+  display: none;
+}
+
+.turtlewatch-page .turtlewatch-buttons summary::marker {
+  display: none;
+}
+
+.turtlewatch-page .noaa-blue {
+  color: #2b6da8;
+}
+
+/* Base collapsible card */
+.turtlewatch-page .turtlewatch-faq {
+  margin-bottom: 1em;
+  border-radius: 8px;
+  border: none;
+  background: #f8f9fa;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  overflow: hidden;
+}
+
+/* Summary = card header */
+.turtlewatch-page .turtlewatch-faq summary {
+  cursor: pointer;
+  padding: 0.25em 0.5em;
+  font-weight: 600;
+  color: #2b6da8; /* NOAA blue */
+  background: #f0f6fa;
+  list-style: none; /* remove triangle marker */
+}
+
+.turtlewatch-page .turtlewatch-faq summary::-webkit-details-marker,
+.turtlewatch-page .turtlewatch-faq summary::marker {
+  display: none; /* hide disclosure triangle */
+}
+
+/* Content area = card body */
+.turtlewatch-page .turtlewatch-faq[open] {
+  background: #fff;
+}
+
+.turtlewatch-page .turtlewatch-faq[open] summary {
+  border-bottom: 1px solid #dee2e6;
+  background: #e9f3fb;
+}
+
+.turtlewatch-page .turtlewatch-faq p,
+.turtlewatch-page .turtlewatch-faq ul {
+  padding: 0.5em 0.75em;
+  margin: 0.25em 0;
+}
+
+/* FAQ lists: use diamonds like cards */
+.turtlewatch-page .turtlewatch-faq ul {
+  list-style: none;
+  padding-left: 1.2em;
+}
+
+.turtlewatch-page .turtlewatch-faq ul li {
+  position: relative;
+  margin-bottom: 0.5em;
+}
+
+.turtlewatch-page .turtlewatch-faq ul li::before {
+  content: "◆";            /* diamond shape */
+  color: #2b6da8;          /* NOAA blue */
+  font-size: 0.8em;
+  position: absolute;
+  left: -1.2em;
+  top: 0.2em;
+}
+
+/* FAQ hyperlinks: NOAA blue + underline */
+.turtlewatch-page .turtlewatch-faq a {
+  color: #2b6da8;
+  text-decoration: underline;
+}
+
+.turtlewatch-page .btn-noaa {
+  background-color: #2b6da8;   /* NOAA blue */
+  color: #fff !important;      /* force white text */
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  padding: 0.5em 1.25em;
+  text-transform: none;        /* prevent uppercase */
+  text-decoration: none !important; /* remove underline */
+  letter-spacing: normal;      /* reset spacing */
+}
+
+.turtlewatch-page .btn-noaa:hover {
+  background-color: #244f7a;   /* darker NOAA blue */
+  color: #fff !important;      /* keep white text */
+  text-decoration: none !important; /* prevent underline on hover */
+}
+
+.turtlewatch-page .turtlewatch-form input,
+.turtlewatch-page .turtlewatch-form select,
+.turtlewatch-page .turtlewatch-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 0.95rem;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+.turtlewatch-page .turtlewatch-form textarea {
+  resize: vertical; /* allow vertical resize only */
+}
+
+.turtlewatch-page .turtlewatch-form button {
+  margin-right: 0.5rem;
+}
+
+
+/* Banner at top of card */
+.turtlewatch-page .status-banner {
+  display: flex;
+  flex-direction: column;   /* stack vertically */
+  align-items: center;      /* center horizontally */
+  text-align: center;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.turtlewatch-page .status-banner span {
+  text-transform: uppercase;   /* ALL CAPS */
+  font-size: 1.4rem;           /* larger text */
+  letter-spacing: 1px;         /* slight spacing for clarity */
+}
+
+.turtlewatch-page .status-banner small {
+  margin-top: 0.25rem;
+  font-size: 0.85rem;
+  font-weight: normal;
+  color: rgba(255,255,255,0.9);
+}
+
+/* Status color variants */
+.turtlewatch-page .status-banner.success {
+  background: #2e8540;  /* green */
+}
+
+.turtlewatch-page .status-banner.alert {
+  background: #d9534f;  /* red */
+}
+
+.turtlewatch-page .status-banner.warning {
+  background: #f0ad4e;  /* orange */
+}
+
+.turtlewatch-page .status-text {
+  text-transform: uppercase; 
+  font-size: 1.6rem;       /* larger headline */
+  margin-bottom: 0.25rem;
+}
+
+.turtlewatch-page .status-date {
+  font-size: 1.1rem;       /* same or slightly smaller */
+  font-weight: 500;
+}
+
+/* Parent card */
+.turtlewatch-page .status-card {
+  background: rgba(0,0,0,0.05);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+/* Grid layout inside card */
+.turtlewatch-page .status-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.turtlewatch-page .status-subcard {
+  background: #fff;                  /* light gray-blue */
+  padding: 1rem 1.25rem;
+  border: 2px solid #2b6da8;
+  border-radius: 8px;
+  margin-bottom: 1rem;                  /* space between sections */
+  box-shadow: 0 1px 3px #fff; /* subtle lift */
+}
+
+.turtlewatch-page .status-subcard strong {
+  color: #003366;                       /* NOAA blue for key labels */
+  font-weight: bold;
+}
+
+/* Table styling */
+.turtlewatch-page .status-subcard table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.turtlewatch-page .status-subcard th {
+  text-align: left;
+  font-weight: 600;
+  border-bottom: 2px solid #e5e7eb;
+  padding: 0.5rem;
+}
+
+.turtlewatch-page .status-subcard td {
+  padding: 0.4rem 0.5rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.turtlewatch-page .status-subcard table tbody tr:nth-of-type(2) td {
+  font-weight: bold;
+  color: #d9534f;  /* NOAA red */
+}
+
+/* Small notes */
+.turtlewatch-page .status-subcard small {
+  display: block;
+  margin-top: 0.5rem;
+  color: #666;
+  font-style: italic;
+}
+
+.turtlewatch-page .status-subcard tr:nth-child(even) {
+  background: #f4f9fc; /* faint NOAA blue tint */
+}
+
+.turtlewatch-page h4.subcard-title {
+  background: #2b6da8;   /* NOAA blue */
+  color: #fff;
+  padding: 0.4rem 0.75rem;
+  margin: 1rem 0 0.75rem;
+  font-weight: 600;
+  border-radius: 4px;
+}
+
+/* Container */
+.turtlewatch-page .status-info {
+  list-style: none;         /* remove bullets */
+  padding: 0;
+  margin: 0 0 1rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.turtlewatch-page .status-info ul {
+  list-style: none;   /* remove bullets */
+  padding: 0;
+  margin: 0;
+}
+
+.turtlewatch-page .status-info li {
+  background: #f8f9fa;
+  border-left: 4px solid #2b6da8;  /* NOAA blue accent */
+  padding: 0.4rem 0.75rem;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;  /* spacing between rows */
+}
+
+/* Header with toggle aligned right */
+.turtlewatch-page .temp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #2b6da8; /* NOAA blue */
+}
+
+/* Toggle controls */
+.turtlewatch-page .unit-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.turtlewatch-page .unit-toggle input[type="radio"] {
+  margin-right: 0.25rem;
+  cursor: pointer;
+}
+
+.turtlewatch-page .unit-toggle label {
+  cursor: pointer;
+  font-weight: normal;
+  color: #333;
+}
+
+.turtlewatch-page .sst-slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.turtlewatch-page .sst-slider .prev,
+.turtlewatch-page .sst-slider .next {
+  background: #2b6da8;  /* NOAA blue */
+  color: #fff;
+  border: none;
+  padding: 0.4rem 0.75rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 0 0.25rem;
+}
+
+.turtlewatch-page .sst-slider .controls {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.turtlewatch-page .sst-slider img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.turtlewatch-page .anom-slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.turtlewatch-page .anom-slider .prev,
+.turtlewatch-page .anom-slider .next {
+  background: #2b6da8;
+  color: #fff;
+  border: none;
+  padding: 0.4rem 0.75rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 0 0.25rem;
+}
+
+.turtlewatch-page .anom-slider img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.turtlewatch-page #elnino-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.turtlewatch-page #elnino-table th,
+.turtlewatch-page #elnino-table td {
+  border: 1px solid #dee2e6;   /* light gray borders */
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+}
+
+.turtlewatch-page #elnino-table th {
+  background: #2b6da8;   /* NOAA blue header */
+  color: #fff;
+  font-weight: 600;
+}
+
+.turtlewatch-page #elnino-table tr:nth-child(even) {
+  background: #f8f9fa;   /* subtle striping */
+}
+
+.turtlewatch-page td.positive {
+  color: #d9534f;   /* red */
+}
+
+.turtlewatch-page td.negative {
+  color: blue;   /* NOAA blue */
+}
+
+/* Force only the anomaly cell to inherit the color */
+.turtlewatch-page td.positive,
+.turtlewatch-page td.negative {
+  font-weight: bold;
+}
+
+/* Reset color for other cells in the row */
+.turtlewatch-page tr td:not(.positive):not(.negative) {
+  color: inherit;
+  font-weight: normal;
+}
+
+
+.turtlewatch-page .dashboard-text {
+  text-transform: uppercase; 
+  font-size: 1.6rem;       /* larger headline */
+  margin-bottom: 0.25rem;
+}
+
+.turtlewatch-page .dashboard-date {
+  font-size: 1.1rem;       /* same or slightly smaller */
+  font-weight: 500;
+}
+
+/* Parent card */
+.turtlewatch-page .dashboard-card {
+  background: rgba(0,0,0,0.05);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+/* Grid layout inside card */
+.turtlewatch-page .dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.turtlewatch-page .dashboard-subcard {
+  background: #fff;                  /* light gray-blue */
+  padding: 1rem 1.25rem;
+  border: 2px solid #2b6da8;
+  border-radius: 8px;
+  margin-bottom: 1rem;                  /* space between sections */
+  box-shadow: 0 1px 3px #fff; /* subtle lift */
+}
+
+.turtlewatch-page .dashboard-subcard strong {
+  color: #003366;                       /* NOAA blue for key labels */
+  font-weight: bold;
+}
+
+/* Table styling */
+.turtlewatch-page .dashboard-subcard table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.turtlewatch-page .dashboard-subcard th {
+  text-align: left;
+  font-weight: 600;
+  border-bottom: 2px solid #e5e7eb;
+  padding: 0.5rem;
+}
+
+.turtlewatch-page .dashboard-subcard td {
+  padding: 0.4rem 0.5rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+/* Small notes */
+.turtlewatch-page .dashboard-subcard small {
+  display: block;
+  margin-top: 0.5rem;
+  color: #666;
+  font-style: italic;
+}
+
+.turtlewatch-page .dashboard-subcard tr:nth-child(even) {
+  background: #f4f9fc; /* faint NOAA blue tint */
+}
+
+.turtlewatch-page h4.dashboard-title {
+  background: #2b6da8;   /* NOAA blue */
+  color: #fff;
+  padding: 0.4rem 0.75rem;
+  margin: 1rem 0 0.75rem;
+  font-weight: 600;
+  border-radius: 4px;
+}
+
+/* Container */
+.turtlewatch-page .dashboard-info {
+  list-style: none;         /* remove bullets */
+  padding: 0;
+  margin: 0 0 1rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.turtlewatch-page .dashboard-info ul {
+  list-style: none;   /* remove bullets */
+  padding: 0;
+  margin: 0;
+}
+
+.turtlewatch-page .dashboard-info li {
+  background: #f8f9fa;
+  border-left: 4px solid #2b6da8;  /* NOAA blue accent */
+  padding: 0.4rem 0.75rem;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;  /* spacing between rows */
+}
+
+.turtlewatch-page .sst-dash-slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.turtlewatch-page .sst-dash-slider .prev,
+.turtlewatch-page .sst-dash-slider .next {
+  background: #2b6da8;  /* NOAA blue */
+  color: #fff;
+  border: none;
+  padding: 0.4rem 0.75rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 0 0.25rem;
+}
+
+.turtlewatch-page .sst-dash-slider .controls {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.turtlewatch-page .sst-dash-slider img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.turtlewatch-page .anom-dash-slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.turtlewatch-page .anom-dash-slider .prev,
+.turtlewatch-page .anom-dash-slider .next {
+  background: #2b6da8;
+  color: #fff;
+  border: none;
+  padding: 0.4rem 0.75rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 0 0.25rem;
+}
+
+.turtlewatch-page .anom-dash-slider img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+
+.turtlewatch-page .year-select-wrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.turtlewatch-page #year-select-input {
+  appearance: none;              /* remove default arrow */
+  background: #2b6da8;           /* NOAA blue */
+  color: #fff;
+  padding: 0.4rem 1.5rem 0.4rem 0.75rem;
+  border-radius: 6px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24'%3E%3Cpath fill='white' d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.5rem center;
+  background-size: 1rem;
+}
+
+.turtlewatch-page #year-select-input:hover {
+  background-color: #1e4d75;
+}
+
+.turtlewatch-page .project-topbar{
+  position: relative;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  padding: .65rem 1.1rem;
+  margin: 0 0 1.25rem 0;
+
+  background: #f2f4f6;
+  border-bottom: 2px solid rgba(0,0,0,.08);
+}
+
+.turtlewatch-page .project-tab {
+  color: #6c757d;           /* lighter gray for inactive */
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+/* Hover */
+.turtlewatch-page .project-tab:hover {
+  color: #2b6da8;           /* NOAA-ish blue on hover */
+}
+
+/* ACTIVE PAGE */
+.turtlewatch-page .project-tabs a.project-tab.active {
+  color: #2b6da8;       /* NOAA blue */
+  font-weight: 700;
+  border-bottom: 2px solid #2b6da8;
+}
+
+/* Brand stays left and is vertically centered */
+.turtlewatch-page .project-topbar .project-brand{
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+  white-space: nowrap;
+}
+
+.turtlewatch-page .project-topbar .project-brand-title{
+  line-height: 1;
+  display: flex;
+  align-items: center;
+}
+
+/* Nudge only if your PNG has transparent padding */
+.turtlewatch-page .project-topbar .project-brand-logo{
+  height: 80px;
+  width: auto;
+  display: block;
+  transform: translateY(1px); /* try 0px, 1px, or 2px */
+}
+
+/* Tabs are centered across the bar */
+.turtlewatch-page .project-topbar .project-tabs{
+  position: static;          /* tabs now affect bar height */
+  transform: none;
+  left: auto;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+  gap: 1.25rem;
+  margin: 0;            /* center within bar */
+}
+
+
+.turtlewatch-page .project-tab{
+  font-size: 1.15rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* Prevent sst table from running off the page */
+.turtlewatch-page .table-scroll {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.turtlewatch-page .table-scroll table {
+  min-width: 500px;
+}
+
+/* Mobile: stack instead of absolute centering */
+@media (max-width: 900px){
+
+  .turtlewatch-page .project-topbar{
+    flex-direction: column;
+    align-items: center;
+    gap: .75rem;
+  }
+
+  .turtlewatch-page .project-topbar .project-tabs{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: .75rem;
+
+    width: auto;
+  }
+
+  .turtlewatch-page .project-tab {
+    font-size: 1rem;
+    white-space: nowrap;
+  }
+}
+
+/* ---------------------------------- */
+/* HISTORICAL TOTAL DATA POPUP        */
+/* ---------------------------------- */
+
+.turtlewatch-page .total-history-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  background-color: rgba(0, 0, 0, 0.65);
+  overflow-y: auto;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.turtlewatch-page .total-history-modal.show {
+  display: flex;
+}
+
+.turtlewatch-page .total-history-modal .modal-content {
+  position: relative;
+  background-color: white;
+  width: 90%;
+  max-width: 1100px;
+  max-height: 85vh;
+  margin: auto;
+  padding: 30px;
+  padding-top: 30px !important;
+  border-radius: 10px;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+/* Close button */
+.turtlewatch-page .total-history-modal .close-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* Table container */
+.turtlewatch-page .historical-table-container {
+  width: 100%;
+  max-height: 60vh;
+  overflow: auto;
+  margin-top: 20px;
+}
+
+/* Historical data table */
+.turtlewatch-page #total-history-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.turtlewatch-page #total-history-table th,
+.turtlewatch-page #total-history-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+  white-space: nowrap;
+}
+
+/* Button positioning */
+.turtlewatch-page .historical-data-actions,
+.turtlewatch-page .historical-modal-actions {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+/* ----------------------- */
+/* COURSE SLIDES PROJECT   */
+/* ----------------------- */
+
+.course-slides-page .project-topbar{
+  position: relative;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  padding: .65rem 1.1rem;
+  margin: 0 0 1.25rem 0;
+
+  background: #f2f4f6;
+  border-bottom: 2px solid rgba(0,0,0,.08);
+}
+
+/* Brand stays left and is vertically centered */
+.course-slides-page .project-topbar .project-brand{
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+  white-space: nowrap;
+}
+
+.course-slides-page .project-topbar .project-brand-title{
+  line-height: 1;
+  display: flex;
+  align-items: center;
+}
+
+/* Nudge only if your PNG has transparent padding */
+.course-slides-page .project-topbar .project-brand-logo{
+  height: 80px;
+  width: auto;
+  display: block;
+  transform: translateY(1px); /* try 0px, 1px, or 2px */
+}
+
+/* Tabs are centered across the bar */
+.course-slides-page .project-topbar .project-tabs{
+  position: static;          /* tabs now affect bar height */
+  transform: none;
+  left: auto;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+  gap: 1rem;
+  margin: 0;            /* center within bar */
+}
+
+.course-slides-page .project-tab{
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #6c757d;           /* lighter gray for inactive */
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+/* Hover */
+.course-slides-page .project-tab:hover {
+  color: #2b6da8;           /* NOAA-ish blue on hover */
+}
+
+/* ACTIVE PAGE */
+.course-slides-page .project-tabs a.project-tab.active {
+  color: #2b6da8;       /* NOAA blue */
+  font-weight: 700;
+  border-bottom: 2px solid #2b6da8;
+}
+
+/* Mobile: stack instead of absolute centering */
+@media (max-width: 900px){
+  .course-slides-page .project-topbar{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: .6rem;
+  }
+  .course-slides-page .project-topbar .project-tabs{
+    position: static;
+    transform: none;
+    left: auto;
+    justify-content: flex-start;
+  }
+}
+
+.course-slides-page .course-slides-hero {
+  text-align: right;
+  margin-bottom: 2rem;
+  position: relative;
+  margin-top: 1rem;
+}
+
+.course-slides-page .hero-img {
+  width: 100%;
+  max-height: 400px;
+  display: block;
+  object-fit: cover;
+  border-radius: 0;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.course-slides-page .image-caption {
+  font-size: 0.85rem;
+  font-style: italic;
+  color: #555;
+  margin-top: 0.25rem;
+  padding-right: 0.5rem;
+  display: block;
+}
+
+.course-slides-page .course-slides-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.course-slides-page .course-slides-card {
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  text-align: left;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.course-slides-page .course-slides-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.course-slides-page .course-slides-card h3 {
+  margin-top: 0;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+.course-slides-page .btn-outline-primary {
+  margin-top: 1rem;
+  padding: 0.5rem 1.2rem;
+  border: 2px solid black;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: all 0.2s ease;
+}
+
+.course-slides-page .btn-outline-primary:hover {
+  background-color: black;
+  color: white;
+}
+
+.course-slides-page .btn-noaa {
+  background-color: #2b6da8;   /* NOAA blue */
+  color: #fff !important;      /* force white text */
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  padding: 0.5em 1.25em;
+  text-transform: none;        /* prevent uppercase */
+  text-decoration: none !important; /* remove underline */
+  letter-spacing: normal;      /* reset spacing */
+}
+
+.course-slides-page .btn-noaa:hover {
+  background-color: #244f7a;   /* darker NOAA blue */
+  color: #fff !important;      /* keep white text */
+  text-decoration: none !important; /* prevent underline on hover */
+}
+
+/*  layout styles */
+.course-slides-page .course-slides-columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  align-items: flex-start;
+  margin-bottom: 2em;
+}
+
+.course-slides-page .course-slides-column {
+  flex: 1 1 48%;
+  min-width: 300px; /* ensures stacking on narrow screens */
+}
+
+/* Base collapsible card */
+.course-slides-page .course-slides-faq {
+  margin-bottom: 1em;
+  border-radius: 8px;
+  border: 1px solid #dee2e6;
+  background: #f8f9fa;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  overflow: hidden;
+}
+
+/* Summary = card header */
+.course-slides-page .course-slides-faq summary {
+  cursor: pointer;
+  padding: 0.25em 0.5em;
+  font-weight: 600;
+  color: #2b6da8; /* NOAA blue */
+  background: #f0f6fa;
+  list-style: none; /* remove triangle marker */
+}
+
+.course-slides-page .course-slides-faq summary::-webkit-details-marker,
+.course-slides-page .course-slides-faq summary::marker {
+  display: none; /* hide disclosure triangle */
+}
+
+/* Content area = card body */
+.course-slides-page .course-slides-faq[open] {
+  background: #fff;
+}
+
+.course-slides-page .course-slides-faq[open] summary {
+  border-bottom: 1px solid #dee2e6;
+  background: #e9f3fb;
+}
+
+.course-slides-page .course-slides-faq p,
+.course-slides-page .course-slides-faq ul {
+  padding: 0.5em 0.75em;
+  margin: 0.25em 0;
+}
+
+.course-slides-page .noaa-blue {
+  color: #2b6da8;
+}
+
+.course-slides-page .noaa-dark-blue {
+  color: #003366;
+}
+
+/* --------------- */
+/* NETPP PROJECT   */
+/* --------------- */
+
+.netpp-page .project-topbar{
+  position: relative;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  padding: .65rem 1.1rem;
+  margin: 0 0 1.25rem 0;
+
+  background: #f2f4f6;
+  border-bottom: 2px solid rgba(0,0,0,.08);
+}
+
+.netpp-page .project-tab {
+  color: #6c757d;           /* lighter gray for inactive */
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+/* Hover */
+.netpp-page .project-tab:hover {
+  color: #2b6da8;           /* NOAA-ish blue on hover */
+}
+
+/* ACTIVE PAGE */
+.netpp-page .project-tabs a.project-tab.active {
+  color: #2b6da8;       /* NOAA blue */
+  font-weight: 700;
+  border-bottom: 2px solid #2b6da8;
+}
+
+/* Brand stays left and is vertically centered */
+.netpp-page .project-topbar .project-brand{
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+  white-space: nowrap;
+}
+
+.netpp-page .project-topbar .project-brand-title{
+  line-height: 1;
+  display: flex;
+  align-items: center;
+}
+
+/* Nudge only if your PNG has transparent padding */
+.netpp-page .project-topbar .project-brand-logo{
+  height: 80px;
+  width: auto;
+  display: block;
+  transform: translateY(1px); /* try 0px, 1px, or 2px */
+}
+
+/* Tabs are centered across the bar */
+.netpp-page .project-topbar .project-tabs{
+  position: static;          /* tabs now affect bar height */
+  transform: none;
+  left: auto;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+  gap: 1.25rem;
+  margin: 0;            /* center within bar */
+}
+
+
+.netpp-page .project-tab{
+  font-size: 1.15rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* Prevent sst table from running off the page */
+.netpp-page .table-scroll {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.netpp-page .table-scroll table {
+  min-width: 500px;
+}
+
+/* Mobile: stack instead of absolute centering */
+@media (max-width: 900px){
+
+  .netpp-page .project-topbar{
+    flex-direction: column;
+    align-items: center;
+    gap: .75rem;
+  }
+
+  .netpp-page .project-topbar .project-tabs{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: .75rem;
+
+    width: auto;
+  }
+
+  .netpp-page .project-tab {
+    font-size: 1rem;
+    white-space: nowrap;
+  }
+}
+
+.netpp-page .turtlewatch-hero {
+  text-align: right;
+  margin-bottom: 2rem;
+  position: relative;
+  margin-top: 1rem;
+}
+
+.netpp-page .hero-img {
+  width: 100%;
+  max-height: 400px;
+  display: block;
+  object-fit: cover;
+  border-radius: 0;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.netpp-page h3 {
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+
+  font-weight: 700;
+}
+
+.netpp-page .tutorial-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit, minmax(320px, 1fr));
+
+  gap: 2rem;
+
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+
+.netpp-page .tutorial-card {
+  background: #ffffff;
+
+  border-radius: 1rem;
+
+  overflow: hidden;
+
+  border: 1px solid rgba(0,0,0,0.08);
+
+  box-shadow: 0 4px 14px rgba(0,0,0,0.05);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+
+  display: flex;
+  flex-direction: column;
+
+  height: 100%;
+}
+
+.netpp-page .tutorial-card:hover {
+  transform: translateY(-4px);
+
+  box-shadow: 0 10px 28px rgba(0,0,0,0.10);
+}
+
+
+.netpp-page .tutorial-card img {
+  width: 100%;
+
+  height: 220px;
+
+  object-fit: contain;
+
+  background: #ffffff;
+
+  padding: 0.75rem;
+
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+
+  cursor: zoom-in;
+
+  transition: transform 0.2s ease;
+}
+
+.netpp-page .tutorial-card img:hover {
+  transform: scale(1.02);
+}
+
+
+.netpp-page .tutorial-card h3 {
+  font-size: 1.05rem;
+
+  font-weight: 700;
+
+  line-height: 1.45;
+
+  letter-spacing: normal;
+
+  text-transform: none;
+
+  margin: 1.25rem 1.25rem 0.75rem 1.25rem;
+}
+
+.netpp-page .tutorial-card p {
+  margin: 0;
+
+  padding: 0 1.25rem;
+
+  color: #555;
+
+  line-height: 1.7;
+
+  font-size: 0.98rem;
+
+  flex-grow: 1;
+}
+
+.netpp-page .tutorial-links {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 0.75rem;
+
+  padding: 1.5rem;
+}
+
+.netpp-page .tutorial-btn {
+  display: inline-block;
+
+  padding: 0.65rem 1.1rem;
+
+  border-radius: 999px;
+
+  background: #2b6da8;
+
+  color: white !important;
+
+  text-decoration: none;
+
+  font-weight: 600;
+
+  font-size: 0.95rem;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.netpp-page .tutorial-btn:hover {
+  background: #205481;
+
+  transform: translateY(-1px);
+
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+
+  .netpp-page .tutorial-grid {
+    gap: 1.5rem;
+  }
+
+  .netpp-page .tutorial-card h3 {
+    font-size: 1.15rem;
+  }
+
+}
+
+.netpp-page .download-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit, minmax(320px, 1fr));
+
+  gap: 2rem;
+
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+
+.netpp-page .download-card {
+  background: #ffffff;
+
+  border-radius: 1rem;
+
+  padding: 1.5rem;
+
+  border: 1px solid rgba(0,0,0,0.08);
+
+  box-shadow: 0 4px 14px rgba(0,0,0,0.05);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.netpp-page .download-card:hover {
+  transform: translateY(-3px);
+
+  box-shadow: 0 10px 24px rgba(0,0,0,0.08);
+}
+
+.netpp-page .download-card h3 {
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+
+  font-size: 1.2rem;
+
+  font-weight: 700;
+
+  line-height: 1.4;
+}
+
+.netpp-page .download-links {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 0.75rem;
+}
+
+.netpp-page .download-link {
+  display: block;
+
+  padding: 0.85rem 1rem;
+
+  border-radius: 0.75rem;
+
+  background: #f8f9fa;
+
+  border: 1px solid rgba(0,0,0,0.06);
+
+  text-decoration: none;
+
+  color: #222;
+
+  font-weight: 500;
+
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.netpp-page .download-link:hover {
+  background: #eef4ff;
+
+  border-color: #0d6efd;
+
+  color: #0d6efd;
+
+  transform: translateX(2px);
+
+  text-decoration: none;
+}
+
+.netpp-page .tutorial-image {
+  width: 100%;
+
+  height: 320px;
+
+  object-fit: contain;
+
+  background: #ffffff;
+
+  padding: 1rem;
+
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+
+  cursor: zoom-in;
+
+  transition: transform 0.2s ease;
+}
+
+.netpp-page .tutorial-image:hover {
+  transform: scale(1.01);
+}
+
+.lightbox {
+  display: none;
+
+  position: fixed;
+
+  z-index: 9999;
+
+  inset: 0;
+
+  background: rgba(0,0,0,0.88);
+
+  justify-content: center;
+  align-items: center;
+
+  padding: 2rem;
+
+  cursor: zoom-out;
+}
+
+.lightbox-content {
+  max-width: min(95vw, 1600px);
+
+  max-height: 92vh;
+
+  width: auto;
+  height: auto;
+
+  object-fit: contain;
+
+  border-radius: 0.5rem;
+
+  background: white;
+
+  box-shadow: 0 12px 40px rgba(0,0,0,0.4);
+}
