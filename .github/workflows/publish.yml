@@ -37,9 +37,6 @@ jobs:
       - name: Install Python dependencies
         run: pip install pyyaml jupyter pandas
 
-      - name: Generate CSV from CMS content
-        run: python scripts/yaml_to_csv.py
-
       - name: Render Quarto website
         run: quarto render
 
