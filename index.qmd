@@ -1,21 +1,90 @@
 ---
-title: "Home"
-jupyter: python3
+anchor-sections: false
+format:
+  html:
+    theme: lux
+    toc: false
+    page-layout: full
 ---
 
+<!-- ---TOP ROW ---------------------------------------------------------------------------------------------------------------------------------- -->
+::: {style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 2rem; margin-top: 2rem;"}
+
+<!-- Left Card with Dimmed Image and Text Overlay -->
+::: {.image-card}
+<div class="overlay-card">
+  <h2>Providing satellite data for the coastal ocean</h2>
+  <p>View and download over 800 regional and global datasets, including satellite data, model output, and in-situ measurements.</p>
+  <a href="data_catalog.qmd" class="btn-primary">View Data Catalog</a>
+</div>
+:::
+
+<!-- Right News Card -->
+::: {.news-card}
+<div style="margin-bottom: 1rem;" class="news-header">
+  <h3 style="margin: 0;">News & Events</h3>
+  <a href="news_archive.qmd">View Archive</a>
+</div>
+
 ```{python}
-#| echo: false
-#| output: asis
+import pandas as pd
+from IPython.display import display, HTML
+from datetime import date
 
-from pathlib import Path
-import yaml
+# Load Excel
+df = pd.read_excel("spreadsheets/news_archive.xlsx")
 
-# Read the CMS-managed YAML file
-with Path("content/homepage.yml").open() as file:
-    content = yaml.safe_load(file)
+# Parse using known format: 27-Jun-25
+df['Date'] = pd.to_datetime(df['Date'], format='%d-%b-%y', errors='coerce')
+df = df[df['Date'].notna()]
 
-# Generate Markdown from the YAML content
-print(f"## {content['title']}\n")
-print(content["description"])
-print(f"\n**Status:** {content['status']}")
+# - Blank Expiration = keep
+# Expiration date in past = hide from news card
+today = pd.Timestamp(date.today())
+
+if "Expiration" in df.columns:
+  df["Expiration"] = pd.to_datetime(df["Expiration"], errors="coerce")
+  df = df[df["Expiration"].isna() | (df["Expiration"] >= today)]
+
+# Sort newest first
+df = df.sort_values(by="Date", ascending=False)
+
+# Show latest 3 entries
+latest_news = df.head(3)
+
+html = ""
+for _, row in latest_news.iterrows():
+    day = row['Date'].day
+    month_year = row['Date'].strftime('%b. %Y')
+    html += f"""
+    <div class='news-item'>
+      <p class='news-title'>{row['Title']}</p>
+      <p>{row['Description']}</p>
+      <p class='news-date'>{day} {month_year}</p>
+    </div>
+    """
+display(HTML(html))
 ```
+:::
+
+
+:::
+
+
+<!-- ---BOTTOM ROW ---------------------------------------------------------------------------------------------------------------------------------- -->
+::: {style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 2rem;"}
+  
+::: {.card}
+<h3>ERDDAP Data Server</h3>
+<p>The ERDDAP data server provides a simple, consistent way to subset and download environmental datasets in common file formats with options to make graphs and maps.</p>
+<a href="https://coastwatch.pfeg.noaa.gov/erddap/index.html" class="btn-primary">ERDDAP Server</a>
+<a href="dataset_monitor.qmd" class="btn-secondary">Dataset Monitor</a>
+<a href="data_server.qmd" class="btn-secondary">Learn More</a>
+:::
+
+::: {.card}
+<h3>Software</h3>
+<p>Explore tools for accessing and analyzing satellite and oceanographic data via ERDDAP, including R and Python packages and the CoastWatch Utilities software for different data formats.</p>
+<a href="tools.qmd" class="btn-primary">Software Tools</a>
+:::
+:::

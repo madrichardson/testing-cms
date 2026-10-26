@@ -1,0 +1,453 @@
+news:
+- title: 'Job Opportunity: Satellite Product Modeler'
+  description: UCSC is seeking a Satellite Product Modeler. To view and apply for the job, go to https://jobs.ucsc.edu/. Click on the External or Internal Candidate Gateway. Enter the ID 80980 to the “Search Jobs” field.
+  date: '2025-09-08'
+  expiration: '2026-02-24'
+- title: Monthly NOAA Gridded Super-collated SST
+  description: A monthly version of the NOAA Gridded Super-collated SST is available on ERDDAP.
+  date: '2025-08-28'
+  expiration: null
+- title: Version 2 of Sardine Habitat Model
+  description: 'Version 2 of the Sardine Habitat Model, based on either <a href="https://coastwatch.pfeg.noaa.gov/erddap/griddap/sardine_habitat_modis_v2.graph" target="_blank">MODIS</a> or <a href="https://coastwatch.pfeg.noaa.gov/erddap/griddap/sardine_habitat_viirs_v2.graph" target="_blank">VIIRS</a>, are available on ERDDAP. '
+  date: '2025-08-28'
+  expiration: null
+- title: ERDDAP Showcase
+  description: 'ERDDAP <a href="https://groups.google.com/g/erddap-announce/c/ovR5iHQqrsc/m/iffbTSTLKAAJ" target="_blank">Showcase</a>: Showing off work done by Google Summer of Code contributors and the community. September 23 · 9:00 – 10:00am, Pacific Time. '
+  date: '2025-08-26'
+  expiration: null
+- title: VIIRS Primary Productivity Datasets
+  description: 'Primary productivity <a href="https://coastwatch.pfeg.noaa.gov/erddap/search/index.html?page=1&amp;itemsPerPage=1000&amp;searchFor=productivity_viirs_noaa20_" target="_blank">datasets</a> (daily and monthy) based on VIIRS data are available on ERDDAP. '
+  date: '2025-08-15'
+  expiration: null
+- title: Decomissioning of NOAA Satellites in the Legacy POES Constellation
+  description: 'The remaining NOAA satellites in the legacy <a href="https://www.ospo.noaa.gov/operations/poes/status.html" target="_blank">POES constellation</a> will be decommissioned. The decommissioning may impact coverage on the <a href="https://coastwatch.pfeg.noaa.gov/erddap/search/index.html?page=1&amp;itemsPerPage=1000&amp;searchFor=erdATsst" target="_blank">POES AVHRR SST datasets</a>. '
+  date: '2025-08-01'
+  expiration: null
+- title: Updated Sardine Habitat Model
+  description: An updated version of the <a href="https://coastwatch.pfeg.noaa.gov/erddap/griddap/sardine_habitat_modis_v2.graph" target="_blank">Sardine Habitat Model</a> is available on ERDDAP.
+  date: '2025-07-16'
+  expiration: null
+- title: 'Job Opportunity: Cloud Specialist'
+  description: '<a href="https://coastwatch.pfeg.noaa.gov/info/UCSC_CW_ProjSci_Flyer2025_v2.pdf" target="_blank">Job opportunity</a> at UCSC: Cloud migration of environmental data.'
+  date: '2025-06-27'
+  expiration: null
+- title: 'Job Opportunity: Development Assistant '
+  description: '<a href="https://coastwatch.pfeg.noaa.gov/info/UCSC_CW_Specialist_Flyer2025_V2.pdf" target="_blank">Job opportunity</a> at UCSC: Development assistant for satellite products.'
+  date: '2025-06-27'
+  expiration: null
+- title: New Publication on Alexandrium catenella Blooms
+  description: 'Check out the <a href="https://doi.org/10.1016/j.jenvman.2025.125042" target="_blank">new paper</a> with CoastWatch West Coast co-authors: Application of dinoflagellate-specific satellite models to aid Alexandrium catenella bloom monitoring in the Bering and Chukchi seas.'
+  date: '2025-03-24'
+  expiration: null
+- title: Spray Glider Dataset from Scripps
+  description: The <a href="https://coastwatch.pfeg.noaa.gov/wcn/erddap/tabledap/scrippsGlidersSQ.graph" target="_blank">Spray Glider dataset</a> from Scripps Institution of Oceanography is available for download on ERDDAP.
+  date: '2025-03-14'
+  expiration: null
+- title: CoastWatch West Code Node Projects Dashboard
+  description: Visit the CoastWatch West Coast Node (WCN) <a href="https://coastwatch.pfeg.noaa.gov/projects" target="_blank">projects dashboard</a> for descriptions of and links to WCN projects.
+  date: '2025-02-21'
+  expiration: null
+- title: High Resolution (750m) SST Datasets Available
+  description: High resolution (750 m) SST datasets for US West Coast and Alaska waters are available for download.
+  date: '2025-01-06'
+  expiration: null
+- title: CoastWatch Office Hours
+  description: Join us live for <a href="https://coastwatch-training.github.io/CoastWatch-Workshops/officehours.html" target="_blank">CoastWatch Office Hours</a>, a Q&A session on satellite data access and CoastWatch training materials. Every other Thursday at 11 am PST beginning Nov. 7, 2024.
+  date: '2024-11-06'
+  expiration: null
+- title: Oceanographic Satellite and Animal Telemetry Data Training Course
+  description: The <a href="https://coastwatch-training.github.io/CoastWatch-Workshops/courses/afs24.html" target="_blank">Oceanographic Satellite and Animal Telemetry Data Training Course</a> (virtual) was held on October 25, 2024.
+  date: '2024-10-26'
+  expiration: null
+- title: Sea Ice Satellite Training Course
+  description: A one-day virtual <a href="https://lp.constantcontactpages.com/ev/reg/78xuhzs/lp/e266250c-b995-44e4-841e-97b4cc22bbec" target="_blank">Sea Ice Satellite Training Course</a> was held October 21, 2024.
+  date: '2024-10-22'
+  expiration: null
+- title: Oceanographic Satellite and Animal Telemetry Data Training Course
+  description: Registration is now open for <a href="https://coastwatch-training.github.io/CoastWatch-Workshops/courses/afs24.html" target="_blank">Oceanographic Satellite and Animal Telemetry Data Training Course</a> (virtual) - October 25, 2024.
+  date: '2024-08-21'
+  expiration: null
+- title: Sea Ice Satellite Training Course
+  description: Registration open for one-day virtual Sea Ice Satellite Training Course, October 21, 2024.
+  date: '2024-07-02'
+  expiration: null
+- title: 2024 CoastWatch Ocean Satellite Course
+  description: CoastWatch held an Ocean Satellite Data Course on March 25-29, 2024. The course was tailored for participants in Micronesia, but anyone was welcome to attend.
+  date: '2024-07-01'
+  expiration: null
+- title: Dr. Cara Wilson Presents at GOOS ERDDAP Seminar Series
+  description: Dr. Cara Wilson, the West Coast Node federal manager, will present <a href="https://us06web.zoom.us/webinar/register/WN_suWrw9xsQsmFs0E9hrPhZA#/registration" target="_blank">’How to access ERDDAP data using R’</a> on June 20, 2024 at the GOOS ERDDAP Seminar Series.
+  date: '2024-06-05'
+  expiration: null
+- title: CoastWatch Annual Meeting in College Park, MD
+  description: The CoastWatch Annual Meeting was held on May 20-23, 2024 in Collage Park, MD.
+  date: '2024-05-24'
+  expiration: null
+- title: New Primary Productivity Product Available on ERDDAP
+  description: A new <a href="https://coastwatch.pfeg.noaa.gov/erddap/search/index.html?page=1&amp;itemsPerPage=1000&amp;searchFor=productivity_viirs_snpp" target="_blank">Primary Productivity Product</a> is available on ERDDAP. The product is based on VIIRS data and it replaces the <a href="https://coastwatch.pfeg.noaa.gov/erddap/search/index.html?page=1&amp;itemsPerPage=1000&amp;searchFor=erdMH1pp" target="_blank">legacy MODIS-based</a> product.
+  date: '2024-05-01'
+  expiration: null
+- title: ESA CCI Ocean Colour Product Version 6.0 Available on ERDDAP
+  description: Version 6.0 of the <a href="https://coastwatch.pfeg.noaa.gov/erddap/search/index.html?page=1&amp;itemsPerPage=1000&amp;searchFor=pmlEsaCCI6" target="_blank">ESA CCI Ocean Colour Product</a> is available on ERDDAP, providing over 60 ocean color products at daily, 8-day, and monthly intervals.
+  date: '2023-09-01'
+  expiration: null
+- title: MODIS Data has Been Reprocessed (R2022)
+  description: 'MODIS data has been reprocessed (R2022). Datasets using pre-R2022 data are no long being updated. The <a href="https://coastwatch.pfeg.noaa.gov/erddap/search/index.html?page=1&amp;itemsPerPage=1000&amp;searchFor=R2022" target="_blank">R2022 version of MODIS dataset</a> can be accessed on ERDDAP. '
+  date: '2023-08-22'
+  expiration: null
+- title: 'Job Opportunity: Development Assistant'
+  description: 'Position opening with CoastWatch for a <a href="https://coastwatch.pfeg.noaa.gov/info/CoastWatch_Specialist_Flyer_202305.pdf" target="_blank">Development Assistant</a> for satellite-based ocean products. The application deadline has passed (May 25, 2023), but applications will be accepted until the position is filled. '
+  date: '2023-05-25'
+  expiration: null
+- title: Arctic Report Card 2022
+  description: 'Arctic <a href="https://www.arctic.noaa.gov/Report-Card/Report-Card-2022" target="_blank">Report Card 2022</a>: shifting seasons, widespread disturbances, and the value of diverse observations.'
+  date: '2023-02-13'
+  expiration: null
+- title: ERDDAP Update
+  description: <a href="https://erddap.github.io/changes" target="_blank">Version notes</a> and instructions for <a href="https://erddap.github.io/docs/server-admin/deploy-install" target="_blank">downloading and installing</a> are available for ERDDAP ver 2.22.
+  date: '2022-12-15'
+  expiration: null
+- title: NOAA JPSS-2 Launched
+  description: NOAA’s Joint Polar Satellite System-2 (JPSS-2) launched from California’s Vandenberg Space Force Base on Nov. 10, 2022.
+  date: '2022-11-10'
+  expiration: null
+- title: Instruments Aboard SNPP in Safe Mode and Not Transmitting Data
+  description: All instruments aboard the SNPP spacecraft (including VIIRS) are in <a href="https://coastwatch.noaa.gov/cw/node/295.html" target="_blank">safe mode and not transmitting data</a>.
+  date: '2022-07-27'
+  expiration: null
+- title: Data Flow to MODIS Aqua Products Restored
+  description: Data flow to the MODIS Aqua products has been restored. The Aqua sensor is nearing its end of life. Please consider switchig to products based on other sensors e.g. <a href="https://coastwatch.pfeg.noaa.gov/erddap/search/index.html?page=1&amp;itemsPerPage=1000&amp;searchFor=viirs+chl" target="_blank">VIIRS</a>.
+  date: '2022-04-25'
+  expiration: null
+- title: MODIS Aqua Sensor Not Producing Science Data
+  description: The MODIS Aqua sensor is not producing science data. All of the MODIS Aqua prducts in our ERDDAP catalog are impacted. The <a href="https://ladsweb.modaps.eosdis.nasa.gov/alerts-and-issues/?id=82965" target="_blank">cause of the anomaly is under investigation</a>.
+  date: '2022-03-30'
+  expiration: null
+- title: MODIS Aqua Mission Ending October 31, 2022
+  description: MODIS Aqua mission will end October 31, 2022 and at that time satellite products from the sensor will will no long be produced.
+  date: '2022-03-25'
+  expiration: null
+- title: Version 1 of C-HARM Forecast Dataset replaced by Version 2
+  description: <a href="https://coastwatch.pfeg.noaa.gov/erddap/search/index.html?page=1&amp;itemsPerPage=1000&amp;searchFor=C-HARM+v1" target="_blank">Version 1</a> of the C-HARM harmful algal bloom forecast dataset has been discontinued and has been replace by <a href="https://coastwatch.pfeg.noaa.gov/erddap/search/index.html?page=1&amp;itemsPerPage=1000&amp;searchFor=C-HARM+v2" target="_blank">Version 2</a>.
+  date: '2022-03-22'
+  expiration: null
+- title: 2022 CoastWatch Ocean Satellite Data Course
+  description: 'The CoastWatch Ocean Satellite Data Course was held on 24-28 January 2022. '
+  date: '2022-03-03'
+  expiration: null
+- title: ERDDAP Update
+  description: <a href="https://erddap.github.io/changes" target="_blank">Version notes</a> and instructions for <a href="https://erddap.github.io/docs/server-admin/deploy-install" target="_blank">downloading and installing</a> are available for ERDDAP ver 2.18.
+  date: '2022-02-28'
+  expiration: null
+- title: 2022 CoastWatch Ocean Satellite Data Course
+  description: Registration is now closed for the first CoastWatch Ocean Satellite Data Course of 2022 (24-28 January).
+  date: '2022-01-18'
+  expiration: null
+- title: ERDDAP Update
+  description: <a href="https://erddap.github.io/changes" target="_blank">Version notes</a> and instructions for <a href="https://erddap.github.io/docs/server-admin/deploy-install" target="_blank">downloading and installing</a> are available for ERDDAP ver 2.16.
+  date: '2022-01-14'
+  expiration: null
+- title: 2022 CoastWatch Ocean Satellite Data Course
+  description: Registration is open for the first <a href="https://coastwatch.pfeg.noaa.gov/courses/satellite_course_reg.html" target="_blank">CoastWatch Ocean Satellite Data Course</a> of 2022, to be held 24-28 January 2022. The course will be held online via videoconferencing.
+  date: '2021-12-01'
+  expiration: null
+- title: CoastWatch Browsers Have Been Discontinued
+  description: The CoastWatch Browsers have been discontinued. Please go to our <a href="https://coastwatch.pfeg.noaa.gov/browsers/index.html" target="_blank">information page</a> for assistance with using alternative services or contact us using the <a href="https://coastwatch.pfeg.noaa.gov/feedback.html" target="_blank">Guest Book form</a>.
+  date: '2021-08-30'
+  expiration: null
+- title: ERDDAP Update
+  description: <a href="https://erddap.github.io/changes" target="_blank">Version notes</a> and instructions for <a href="https://erddap.github.io/docs/server-admin/deploy-install" target="_blank">downloading and installing</a> are available for ERDDAP ver 2.14.
+  date: '2021-07-09'
+  expiration: null
+- title: 2021 CoastWatch Ocean Satellite Data Course
+  description: 'The CoastWatch Ocean Satellite Data Course was held on 3-7 May 2021. '
+  date: '2021-06-03'
+  expiration: null
+- title: GOES-17 SST Hourly Data Available on ERDDAP
+  description: GOES-17 <a href="https://coastwatch.pfeg.noaa.gov/erddap/griddap/jplABI_G17-STAR-L3C-v2_71.graph?sea_surface_temperature%5B(2021-05-28T08:00:00Z)%5D%5B(89.99):(-89.99)%5D%5B(-179.99):(179.99)%5D&amp;.draw=surface&amp;.vars=longitude%7Clatitude%7Csea_surface_temperature" target="_blank">SST hourly data</a> covering the Eastern Pacific are available on ERDDAP.
+  date: '2021-06-01'
+  expiration: null
+- title: ERDDAP Update
+  description: <a href="https://erddap.github.io/changes" target="_blank">Version notes</a> and instructions for <a href="https://erddap.github.io/docs/server-admin/deploy-install" target="_blank">downloading and installing</a> are available for ERDDAP ver 2.12.
+  date: '2021-05-22'
+  expiration: null
+- title: Updates to Sardine Potential Habitat Map
+  description: CoastWatch and SWFSC have transitioned the <a href="https://coastwatch.pfeg.noaa.gov/erddap/search/index.html?page=1&amp;itemsPerPage=1000&amp;searchFor=sardine_habitat" target="_blank">Sardine Potential Habit map</a> to ERDDAP. Versions based on MODIS and VIIRS satellite data are produced daily.
+  date: '2021-05-10'
+  expiration: null
+- title: 'ESA CCI Ocean Colour Product Version 5.0 Available '
+  description: Version 5.0 of the <a href="https://coastwatch.pfeg.noaa.gov/erddap/search/index.html?page=1&amp;itemsPerPage=1000&amp;searchFor=pmlEsaCCI50" target="_blank">ESA CCI Ocean Colour Product</a> is available on ERDDAP, providing over 60 ocean color products at daily, 8-day, and monthly intervals.
+  date: '2021-03-01'
+  expiration: null
+- title: 2021 CoastWatch Ocean Satellite Data Course
+  description: 'Registration is open for the 2021 <a href="https://coastwatch.pfeg.noaa.gov/courses/satellite_course_reg.html" target="_blank">CoastWatch Ocean Satellite Data Course</a> to be held 3-7 May 2021. The course will be held remotely via videoconferencing. '
+  date: '2021-02-10'
+  expiration: null
+- title: View the talk 'The Ocean from Space'
+  description: 'View the talk <a href="https://www.youtube.com/watch?v=c2mJC3aseeg&amp;list=PL1CGd4Scv4GICVRODGA8RRvzocNN1lL8H&amp;index=3&amp;t=28s" target="_blank">’The Ocean from Space’</a> presented for the NOAA Live! series by Cara Wilson, the CoastWatch West Coast Node Manager. '
+  date: '2020-12-10'
+  expiration: null
+- title: 'Job Opportunity '
+  description: Job opportunity at the CoastWatch Central Pacific Node.
+  date: '2020-10-19'
+  expiration: null
+- title: GOES CZU Lightning Complex Boundry Map and VIIRS Fire Map
+  description: <a href="https://www.google.com/maps/@37.1191076,-122.2332257,11z/data=!4m3!15m2!1m1!1s%2Fg%2F11kn8bpg_6" target="_blank">Google map</a> showing CZU Lightning Complex boundry, based on GOES satellite data. <a href="https://www.arcgis.com/apps/webappviewer/index.html?id=ac4e6acdd58d4afaa0b8ce0e314108e0&amp;fbclid=IwAR1cAUmKXozfhWyH1L81-VeamI4js1rLYxRX3NS4A-a_oD3yyhZgf93R_ZQ" target="_blank">Fire map</a> based on VIIRS satellite data.
+  date: '2020-08-20'
+  expiration: null
+- title: CZU Fire and Evacuation Map with EPS Air Quality Sensor Data
+  description: 'CZU Lightning Complex Fire and evacuation zone <a href="https://storymaps.arcgis.com/stories/f0121f7f2f0941afb3ed70529b2cee75" target="_blank">map</a>. EPS <a href="https://www.purpleair.com/map?opt=1/i/mAQI/a0/cC0#8.23/37.146/-122.057" target="_blank">air quality sensors</a>. '
+  date: '2020-08-20'
+  expiration: null
+- title: GEBCO 2020 Grid Dataset Available on ERDDAP
+  description: The <a href="https://coastwatch.pfeg.noaa.gov/erddap/griddap/GEBCO_2020.graph" target="_blank">GEBCO 2020 grid</a> dataset, a continuous terrain model for oceans and land, is available on ERDDAP.
+  date: '2020-05-26'
+  expiration: null
+- title: Version 2.1 of the Daily Optimum Interpolation Available
+  description: Version 2.1 of the Daily Optimum Interpolation, AVHRR only dataset is now available. The near real-time and science quality datasets can be found on ERDDAP.
+  date: '2020-05-24'
+  expiration: null
+- title: Online 2020 CoastWatch Ocean Satellite Data Course
+  description: An online version of the CoastWatch Ocean Satellite Data Course was held 7-9 April 2020.
+  date: '2020-04-10'
+  expiration: null
+- title: 2020 CoastWatch Ocean Satellite Data Course
+  description: Registration is open for the 2020 <a href="https://coastwatch.pfeg.noaa.gov/courses/satellite_course_reg.html" target="_blank">CoastWatch Ocean Satellite Data Course</a> to be held 7-9 April 2020. The course will be held remotely via videoconferencing.
+  date: '2020-03-16'
+  expiration: null
+- title: 2020 CoastWatch Ocean Satellite Data Course
+  description: The CoastWatch Ocean Satellite Data Course was held 5-7 Feb 2020 in San Juan, PR.
+  date: '2020-02-10'
+  expiration: null
+- title: Seafloor Depth Gradients Available on ERDDAP
+  description: Two <a href="https://coastwatch.pfeg.noaa.gov/erddap/search/index.html?page=1&amp;itemsPerPage=1000&amp;searchFor=seafloor+gradient" target="_blank">Seafloor Depth Gradients</a> datasets are now available on ERDDAP.
+  date: '2019-12-05'
+  expiration: null
+- title: Blended NOAA-SNPP/NOAA-20 VIIRS NRT Chlorophyll Available on ERDDAP
+  description: The <a href="https://coastwatch.pfeg.noaa.gov/erddap/search/index.html?page=1&amp;itemsPerPage=1000&amp;searchFor=nesdisVHNnoaaSNPPnoaa20" target="_blank">Blended NOAA-SNPP/NOAA-20 VIIRS NRT chlorophyll</a> dataset is available on ERDDAP.
+  date: '2019-11-22'
+  expiration: null
+- title: NOAA-SNPP VIIRS SST Available on ERDDAP
+  description: The <a href="https://coastwatch.pfeg.noaa.gov/erddap/search/index.html?page=1&amp;itemsPerPage=1000&amp;searchFor=nesdisVHNsst" target="_blank">NOAA-SNPP VIIRS SST</a> dataset is available on ERDDAP.
+  date: '2019-11-20'
+  expiration: null
+- title: NOAA-20 VIIRS SST and Chlorophyll Available on ERDDAP
+  description: The <a href="https://coastwatch.pfeg.noaa.gov/erddap/search/index.html?page=1&amp;itemsPerPage=1000&amp;searchFor=nesdisVHNnoaa20" target="_blank">NOAA-20 VIIRS SST and chlorophyll</a> datasets are available on ERDDAP.
+  date: '2019-11-10'
+  expiration: null
+- title: ESA CCI Ocean Colour Product Version 4.0 Available on ERDDAP
+  description: Version 4.0 of the <a href="https://coastwatch.pfeg.noaa.gov/erddap/search/index.html?page=1&amp;itemsPerPage=1000&amp;searchFor=pmlEsaCCI40" target="_blank">ESA CCI Ocean Colour Product</a> is available on ERDDAP, providing over 60 ocean color products at daily, 8-day, and monthly intervals.
+  date: '2019-10-30'
+  expiration: null
+- title: NOAA Pathfinder SST V5.3 Updated
+  description: The <a href="https://coastwatch.pfeg.noaa.gov/erddap/search/index.html?page=1&amp;itemsPerPage=1000&amp;searchFor=pathfinder+5.3" target="_blank">NOAA Pathfinder SST V5.3</a> has been updated on ERDDAP through Sept. 2019.
+  date: '2019-10-22'
+  expiration: null
+- title: Monthly Composites of SST and SSTa from NOAA Global Coral Bleaching Monitoring Program Available
+  description: Monthly composites of <a href="https://coastwatch.pfeg.noaa.gov/erddap/search/index.html?page=1&amp;itemsPerPage=1000&amp;searchFor=NOAA_DHW_monthly" target="_blank">SST and SST Anomaly from the NOAA Global Coral Bleaching Monitoring</a> program (5km, 1985-Present) are available on ERDDAP.
+  date: '2019-10-15'
+  expiration: null
+- title: 2019 CoastWatch Ocean Satellite Data Course
+  description: Registration is open for the 2019 CoastWatch Ocean Satellite Data Course to be held in San Juan, Puerto Rico (5-7 Feb 2020).
+  date: '2019-10-01'
+  expiration: null
+- title: ERDDAP Update
+  description: <a href="https://erddap.github.io/changes" target="_blank">Version notes</a> and instructions for <a href="https://erddap.github.io/docs/server-admin/deploy-install" target="_blank">downloading and installing</a> are available for ERDDAP ver 2.02.
+  date: '2019-08-30'
+  expiration: null
+- title: ERDDAP Update
+  description: <a href="https://erddap.github.io/changes" target="_blank">Version notes</a> and instructions for <a href="https://erddap.github.io/docs/server-admin/deploy-install" target="_blank">downloading and installing</a> are available for ERDDAP ver 2.0.
+  date: '2019-08-01'
+  expiration: null
+- title: 2019 CoastWatch Ocean Satellite Data Courses
+  description: Registration is open for the 2019 CoastWatch Ocean Satellite Data Courses to be held in Galveston, Texas (24-26 Sep 2019) and San Juan, Puerto Rico (5-7 Feb 2020).
+  date: '2019-06-28'
+  expiration: null
+- title: rErddapXtracto R Package Available on CRAN
+  description: The <a href="https://cran.r-project.org/package=rerddapXtracto" target="_blank">rErddapXtracto R package</a> is now available on CRAN.
+  date: '2019-06-04'
+  expiration: null
+- title: New Frontal Product for MUR SST Dataset
+  description: A new <a href="https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdMurFront41USWest.graph" target="_blank">frontal product</a> for the US West Coast based on the MUR SST dataset is available on ERDDAP.
+  date: '2019-05-20'
+  expiration: null
+- title: NOAA Geo-Polar Blended SST Datasets Available on ERDDAP
+  description: The NOAA <a href="https://coastwatch.pfeg.noaa.gov/erddap/search/index.html?page=1&amp;itemsPerPage=1000&amp;searchFor=geopolar" target="_blank">Geo-Polar Blended SST</a> datasets are available on ERDDAP.
+  date: '2019-04-20'
+  expiration: null
+- title: 2019 NOAA Ocean Satellite Data Course
+  description: The 2019 <a href="https://coastwatch.pfeg.noaa.gov/courses/satellite_course_reg.html" target="_blank">NOAA Ocean Satellite Data Course</a> was held in Juneau (5-7 Mar 2019).
+  date: '2019-03-10'
+  expiration: null
+- title: 2019 NOAA Ocean Satellite Data Course
+  description: Registration is open for the 2019 <a href="https://coastwatch.pfeg.noaa.gov/courses/satellite_course_reg.html" target="_blank">NOAA Ocean Satellite Data Course</a> to be held in Juneau (5-7 Mar 2019). The Puerto Rico course has been cancelled. We are looking into rescheduling options.
+  date: '2019-01-28'
+  expiration: null
+- title: ' ESA CCI Ocean Colour Product (v3.1) Available on ERDDAP'
+  description: The <a href="https://coastwatch.pfeg.noaa.gov/erddap/search/index.html?page=1&amp;itemsPerPage=1000&amp;searchFor=pmlEsaCCI31" target="_blank">ESA CCI Ocean Colour Product</a> (v3.1) is available on ERDDAP, providing over 60 ocean color products at daily, 8-day, and monthly intervals.
+  date: '2018-10-25'
+  expiration: null
+- title: 2018 NOAA Ocean Satellite Data Course
+  description: 'The <a href="https://coastwatch.pfeg.noaa.gov/courses/satellite_course.html" target="_blank">2018 NOAA Ocean Satellite Data Course</a> was held in Seattle at the University of Washington Aug 28 - Aug 30 2018. Please use our course-update form to receive information about upcoming courses. '
+  date: '2018-09-05'
+  expiration: null
+- title: OSU SST and Chlorophyll Anomaly Products
+  description: The <a href="https://coastwatch.pfeg.noaa.gov/erddap/search/index.html?page=1&amp;itemsPerPage=1000&amp;searchFor=osu2" target="_blank">OSU SST and Chlorophyll Anomaly products</a> are now updated monthly by CoastWatch West Coast.
+  date: '2018-06-18'
+  expiration: null
+- title: New Tool Development with EcoCast Program
+  description: CoastWatch West Coast Node assists the EcoCast program to develop a <a href="https://coastwatch.pfeg.noaa.gov/ecocast/" target="_blank">new tool</a> to improve fishing efficiency and sustainability [<a href="https://swfsc.noaa.gov/news.aspx?ParentMenuId=200&amp;id=23061" target="_blank">press release</a>].
+  date: '2018-05-30'
+  expiration: null
+- title: 2018 NOAA Ocean Satellite Data Course
+  description: The 2018 NOAA Ocean Satellite Data Course will be held in Seattle at the University of Washington Aug 28 - Aug 30 2018. <a href="https://coastwatch.pfeg.noaa.gov/courses/satellite_course_reg.html" target="_blank">Registration</a> for the course is now open.
+  date: '2018-05-18'
+  expiration: null
+- title: GOES-S Satellite Launched
+  description: 'The <a href="https://blogs.nasa.gov/goes/" target="_blank">GOES-S satellite</a> was launched on March 2 at 5:02 pm EST. '
+  date: '2018-03-02'
+  expiration: null
+- title: ERDDAP Update
+  description: <a href="https://erddap.github.io/changes" target="_blank">Version notes</a> and instructions for <a href="https://erddap.github.io/docs/server-admin/deploy-install" target="_blank">downloading and installing</a> are available for ERDDAP ver 1.82.
+  date: '2018-02-19'
+  expiration: null
+- title: New PolarWatch Data Catalog
+  description: A new release of the <a href="https://polarwatch.noaa.gov/" target="_blank">PolarWatch data catalog</a> is available, with improved search and download capabilities.
+  date: '2018-01-10'
+  expiration: null
+- title: Sea Surface Salinity Data from SMOS Sensor Not Updated
+  description: Sea surface <a href="https://coastwatch.pfeg.noaa.gov/erddap/search/index.html?page=1&amp;itemsPerPage=1000&amp;searchFor=smos" target="_blank">salinity data</a> from the Soil Moisture and Ocean Salinity (SMOS) sensor will not be updated as of 5/9/2017.
+  date: '2018-01-04'
+  expiration: null
+- title: CoastWatch Presentation at Ocean Sciences Meeting
+  description: The <a href="https://agu.confex.com/agu/os18/meetingapp.cgi/Paper/321094" target="_blank">CoastWatch presentation</a> will be presented at the Ocean Sciences meeting on 2/15/2018 in Portland, OR.
+  date: '2018-01-02'
+  expiration: null
+- title: NOAA's JPSS-1 Satellite Launched
+  description: NOAA's <a href="https://www.nesdis.noaa.gov/content/jpss-1-spacecraft" target="_blank">JPSS-1 satellite</a> was <a href="https://www.nesdis.noaa.gov/jpss-1" target="_blank">launched</a> on Saturday, November 18.
+  date: '2017-11-20'
+  expiration: null
+- title: AVHRR Pathfinder v5.3 Global 4km SST Dataset Composites Available
+  description: Monthly and 8-day <a href="https://coastwatch.pfeg.noaa.gov/erddap/search/index.html?page=1&amp;itemsPerPage=1000&amp;searchFor=erdph53" target="_blank">composites</a> based on the AVHRR Pathfinder v5.3 global 4km SST dataset are available on ERDDAP.
+  date: '2017-11-07'
+  expiration: null
+- title: 'GHRSST L4 OSTIA Global Foundation SST Dataset Available on ERDDAP '
+  description: The <a href="https://coastwatch.pfeg.noaa.gov/erddap/search/index.html?searchFor=ostia" target="_blank">GHRSST L4 OSTIA</a> Global Foundation SST dataset is available on ERDDAP.
+  date: '2017-11-07'
+  expiration: null
+- title: VIIRS Ocean Color Products Available on ERDDAP
+  description: VIIRS <a href="https://coastwatch.pfeg.noaa.gov/erddap/search/index.html?page=1&amp;itemsPerPage=1000&amp;searchFor=nesdisVHNSQ" target="_blank">ocean color products</a> from NOAA are now available on ERDDAP, including daily, weekly, and monthly versions of chlorophyll, Kd (490nm, PAR), and nLw (410, 443, 486, 551, and 671nm).
+  date: '2017-10-19'
+  expiration: null
+- title: GHRSST G1 SST No Longer Updated
+  description: The <a href="https://coastwatch.pfeg.noaa.gov/erddap/griddap/jplG1SST.graph" target="_blank">GHRSST G1</a> SST dataset will no longer be updated on ERDDAP. Consider using the <a href="https://coastwatch.pfeg.noaa.gov/erddap/griddap/jplMURSST41.graph" target="_blank">GHRSST MUR</a> dataset as a replacement.
+  date: '2017-10-11'
+  expiration: null
+- title: GOES SST and Frontal Products Discontinued
+  description: GOES <a href="https://coastwatch.pfeg.noaa.gov/erddap/search/index.html?page=1&amp;itemsPerPage=1000&amp;searchFor=erdGAsst" target="_blank">SST products</a> and <a href="https://coastwatch.pfeg.noaa.gov/erddap/search/index.html?page=1&amp;itemsPerPage=1000&amp;searchFor=erdGAtfn" target="_blank">frontal products</a> will be discontinued in Jan. 2018.
+  date: '2017-10-10'
+  expiration: null
+- title: ERDDAP Update
+  description: <a href="https://erddap.github.io/changes" target="_blank">Version notes</a> and instructions for <a href="https://erddap.github.io/docs/server-admin/deploy-install" target="_blank">downloading and installing</a> are available for ERDDAP ver 1.78.
+  date: '2017-08-15'
+  expiration: null
+- title: CoastWatch Annual Meeting in Santa Cruz, CA
+  description: The CoastWatch Annual meeting will be hosted by the West Coast Regional Node at the NMFS lab in Santa Cruz CA on July 31- August 3, 2017.
+  date: '2017-06-09'
+  expiration: null
+- title: Monthly Composites for the MODIS Aqua NetPP Datasets Available
+  description: Monthly composites for the MODIS Aqua <a href="https://coastwatch.pfeg.noaa.gov/erddap/griddap/erdMH1ppmday.graph" target="_blank">primary productivity</a> dataset (US West Coast) are available on ERDDAP.
+  date: '2017-04-28'
+  expiration: null
+- title: Sea Surface Salinity Data from SMAP Sensor Available
+  description: Sea surface <a href="https://coastwatch.pfeg.noaa.gov/erddap/search/index.html?page=1&amp;itemsPerPage=1000&amp;searchFor=smap" target="_blank">salinity data</a> from the Soil Moisture Active Passive (SMAP) sensor are available on ERDDAP.
+  date: '2017-04-28'
+  expiration: null
+- title: Sea Surface Salinity Data from SMOS Sensor Available
+  description: Sea surface <a href="https://coastwatch.pfeg.noaa.gov/erddap/search/index.html?page=1&amp;itemsPerPage=1000&amp;searchFor=smos" target="_blank">salinity data</a> from the Soil Moisture and Ocean Salinity (SMOS) sensor are available on ERDDAP.
+  date: '2017-04-24'
+  expiration: null
+- title: Ocean Surface Current Analyses Real-time (OSCAR) Product
+  description: Ocean Surface Current Analyses Real-time (<a href="https://coastwatch.pfeg.noaa.gov/erddap/search/index.html?page=1&amp;itemsPerPage=1000&amp;searchFor=jplOscar" target="_blank">OSCAR</a>) product is available on ERDDAP.
+  date: '2017-01-23'
+  expiration: null
+- title: NOAA CW VIIRS 4-km Chlorophyll Products
+  description: The NOAA CoastWatch <a href="https://coastwatch.pfeg.noaa.gov/erddap/search/index.html?page=1&amp;itemsPerPage=1000&amp;searchFor=nesdisVHNchlaDaily2" target="_blank">VIIRS 4-km global chlorophyll product</a> is available on ERDDAP.
+  date: '2016-12-05'
+  expiration: null
+- title: ERDDAP Server Shutdown
+  description: ERDDAP server and the CoastWatch West Coast website shutdown scheduled for Tuesday Oct. 18 from 4:30pm to 10:30pm PDT.
+  date: '2016-10-17'
+  expiration: null
+- title: GHRSST Multi-scale Ultra-high Resolution (MUR) SST
+  description: GHRSST Multi-scale Ultra-high Resolution (MUR) <a href="https://coastwatch.pfeg.noaa.gov/erddap/griddap/jplMURSST41anommday.graph" target="_blank">SST monthly anomaly</a> product is available on ERDDAP.
+  date: '2016-10-03'
+  expiration: null
+- title: PolarWatch Coordinator
+  description: Jennifer Patterson joins the CoastWatch team as the coordinator of the new PolarWatch program. Welcome aboard, Jenn!
+  date: '2016-09-26'
+  expiration: null
+- title: ERDDAP Update
+  description: <a href="https://erddap.github.io/changes" target="_blank">Version notes</a> and instructions for <a href="https://erddap.github.io/docs/server-admin/deploy-install" target="_blank">downloading and installing</a> are available for ERDDAP ver 1.72.
+  date: '2016-05-20'
+  expiration: null
+- title: 2016 NOAA Ocean Satellite Data Course
+  description: The <a href="https://coastwatch.pfeg.noaa.gov/courses/satellite_course.html" target="_blank">2016 NOAA Ocean Satellite Data Course</a> was held in Seattle at the University of Washington Aug 30 - Sept 1 2016.
+  date: '2016-05-09'
+  expiration: null
+- title: POES Global Area Coverage SST
+  description: <a href="https://coastwatch.pfeg.noaa.gov/erddap/search/index.html?page=1&amp;itemsPerPage=1000&amp;searchFor=erdAG" target="_blank">POES Global Area Coverage SST and SST anomaly products</a> are no longer being produced.
+  date: '2016-05-09'
+  expiration: null
+- title: 'Job Opportunity: PolarWatch Coordinator'
+  description: ' <a href="https://jobs.ucsc.edu/applicants/Central?quickFind=68961" target="_blank">PolarWatch Coordinator</a>, NOAA/UC Santa Cruz, Santa Cruz, CA.'
+  date: '2016-05-05'
+  expiration: null
+- title: GHRSST Multi-scale Ultra-high Resolution (MUR)
+  description: GHRSST Multi-scale Ultra-high Resolution (MUR) <a href="https://coastwatch.pfeg.noaa.gov/erddap/griddap/jplMURSST41anom1day.graph" target="_blank">SST daily anomaly</a> product and <a href="https://coastwatch.pfeg.noaa.gov/erddap/griddap/jplMURSST41clim.graph" target="_blank">climatology</a> are available on ERDDAP.
+  date: '2016-04-22'
+  expiration: null
+- title: ERDDAP Update
+  description: <a href="https://erddap.github.io/changes" target="_blank">Version notes</a> and instructions for <a href="https://erddap.github.io/docs/server-admin/deploy-install" target="_blank">downloading and installing</a> are available for ERDDAP.
+  date: '2016-04-20'
+  expiration: null
+- title: ERDDAP Update
+  description: <a href="https://erddap.github.io/changes" target="_blank">Version notes</a> and instructions for <a href="https://erddap.github.io/docs/server-admin/deploy-install" target="_blank">downloading and installing</a> are available for ERDDAP.
+  date: '2016-02-12'
+  expiration: null
+- title: 'Job Opportunity: PolarWatch Coordinator'
+  description: PolarWatch Coordinator (<a href="https://academicpersonnel.ucsc.edu/academic_employment/jobs/JPF00331-16T.pdf" target="_blank">Assistant/Associate Specialist</a>) located at the NOAA Southwest Fisheries Science Center laboratory in Santa Cruz, CA.
+  date: '2015-12-03'
+  expiration: null
+- title: New VIIRS 750m Chlorophyll-a Datasets
+  description: New <a href="https://coastwatch.pfeg.noaa.gov/erddap/search/index.html?page=1&amp;itemsPerPage=1000&amp;searchFor=NOAA+VIIRS+750m" target="_blank">NOAA VIIRS 750m resolution Chlorophyll a</a> datasets are available for the northeastern Pacific.
+  date: '2015-11-20'
+  expiration: null
+- title: What was killing the young right whales?
+  description: <a href="https://www.eurekalert.org/pub_releases/2015-10/nfwc-wwk102315.php" target="_blank">New research by an ERD and CoastWatch researcher</a> finds a suspect.
+  date: '2015-10-29'
+  expiration: null
+- title: New ASCAT Wind Products
+  description: Products from <a href="https://coastwatch.pfeg.noaa.gov/erddap/search/index.html?page=1&amp;itemsPerPage=1000&amp;searchFor=Metop-B" target="_blank"> METOP-B</a> and products from a blend of <a href="https://coastwatch.pfeg.noaa.gov/erddap/search/index.html?page=1&amp;itemsPerPage=1000&amp;searchFor=erdQM" target="_blank">all METOP data</a> (A and B) are available on ERDDAPs.
+  date: '2015-10-20'
+  expiration: null
+- title: Xtractomatic Tools Update
+  description: New versions of <a href="https://github.com/rmendels/xtractoMatlab" target="_blank">Xtracto for Matlab</a> and <a href="https://github.com/rmendels/xtractomatic" target="_blank">Xtracto for R</a> that access more datasets.
+  date: '2015-03-09'
+  expiration: null
+- title: Reprocessed SeaWiFS chlorophyll data (R2014.0)
+  description: Reprocessed <a href="https://coastwatch.pfeg.noaa.gov/erddap/search/index.html?page=1&amp;itemsPerPage=1000&amp;searchFor=sw1" target="_blank">SeaWiFS chlorophyll data</a> (R2014.0) are now available on ERDDAP.
+  date: '2015-02-02'
+  expiration: null
+- title: 2015 NOAA Ocean Satellite Data Course
+  description: 'The 2015 NOAA Ocean Satellite Data Course was held Aug. 25-27, 2015 in Seattle, Washington. Visit the <a href="https://coastwatch.pfeg.noaa.gov/courses/satellite_course.html" target="_blank">course webpage</a> for information about the 2016 course. '
+  date: '2014-11-05'
+  expiration: null
+- title: High-resolution VIIRS SST
+  description: High-resolution <a href="https://coastwatch.pfeg.noaa.gov/erddap/search/index.html?page=1&amp;itemsPerPage=1000&amp;searchFor=viirs+sst" target="_blank">VIIRS SST</a> is now available on ERDDAP.
+  date: '2014-11-05'
+  expiration: null
+- title: VIIRS POC and PIC Datasets
+  description: VIIRS <a href="https://coastwatch.pfeg.noaa.gov/erddap/search/index.html?page=1&amp;itemsPerPage=1000&amp;searchFor=viirs+poc" target="_blank">POC</a> and <a href="https://coastwatch.pfeg.noaa.gov/erddap/search/index.html?page=1&amp;itemsPerPage=1000&amp;searchFor=viirs+pic" target="_blank">PIC</a> are now available on ERDDAP.
+  date: '2014-08-26'
+  expiration: null
