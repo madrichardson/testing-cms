@@ -19,3 +19,15 @@ print(f"## {content['title']}\n")
 print(content["description"])
 print(f"\n**Status:** {content['status']}")
 ```
+
+## Project Status
+
+```{python}
+#| echo: false
+
+import pandas as pd
+
+projects = pd.read_csv("data/projects.csv")
+
+display(projects)
+```
