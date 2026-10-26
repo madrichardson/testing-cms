@@ -1,3 +1,4 @@
+
 ---
 anchor-sections: false
 format:
@@ -15,24 +16,34 @@ Explore recent updates, publications, job opportunities, and dataset releases fr
 
 ```{python}
 import pandas as pd
+import yaml
 from IPython.display import display, HTML
 
-# Load and parse
-df = pd.read_excel("spreadsheets/news_archive.xlsx")
-df['Date'] = pd.to_datetime(df['Date'], format='%d-%b-%y', errors='coerce')
-df = df[df['Date'].notna()]
-df = df.sort_values(by='Date', ascending=False)
+# Load news announcements from YAML
+with open("content/news.yml", "r", encoding="utf-8") as file:
+    news_data = yaml.safe_load(file)
+
+df = pd.DataFrame(news_data["news"])
+
+# Parse publication dates
+df["date"] = pd.to_datetime(df["date"], errors="coerce")
+df = df[df["date"].notna()]
+
+# Sort newest first
+df = df.sort_values(by="date", ascending=False)
 
 # Extract year
-df['Year'] = df['Date'].dt.year
+df["Year"] = df["date"].dt.year
 
 # Group by year
 html = ""
-for year, group in df.groupby('Year', sort=False):
+for year, group in df.groupby("Year", sort=False):
     html += f"<h2 style='margin-top: 2.5rem; color: #014077;'>{year}</h2>\n"
+
     for _, row in group.iterrows():
-        day = row['Date'].day
-        month_year = row['Date'].strftime('%b. %Y')
+        day = row["date"].day
+        month_year = row["date"].strftime("%b. %Y")
+
         html += f"""
         <div class='news-item' style='
           background-color: #f8f9fa;
@@ -42,11 +53,12 @@ for year, group in df.groupby('Year', sort=False):
           margin-bottom: 1.5rem;
           box-shadow: 0 2px 6px rgba(0,0,0,0.05);'>
 
-          <p class='news-title' style='font-weight: bold; font-size: 1.25rem; margin-bottom: 0.5rem;'>{row['Title']}</p>
-          <p style='font-size: 1.05rem; line-height: 1.6;'>{row['Description']}</p>
+          <p class='news-title' style='font-weight: bold; font-size: 1.25rem; margin-bottom: 0.5rem;'>{row['title']}</p>
+          <p style='font-size: 1.05rem; line-height: 1.6;'>{row['description']}</p>
           <p class='news-date' style='color: #777; font-size: 0.95rem; margin-top: 0.75rem;'>{day} {month_year}</p>
         </div>
         """
+
 display(HTML(html))
 ```
 
