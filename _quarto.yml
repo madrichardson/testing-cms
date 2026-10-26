@@ -1,21 +1,21 @@
 project:
   type: website
+  output-dir: _site
 
 website:
-  title: "website"
+  title: "Practice Website"
   navbar:
     left:
       - href: index.qmd
         text: Home
-      - about.qmd
+      - href: about.qmd
+        text: About
 
 format:
   html:
-    theme:
-      - cosmo
-      - brand
+    theme: cosmo
     css: styles.css
     toc: true
 
-
-
+execute:
+  freeze: false
